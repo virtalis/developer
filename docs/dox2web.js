@@ -6,11 +6,11 @@ $(document).ready(function() {
     if(h) { $('span' + h).next().removeClass('panel-info').addClass('highlighted panel-success'); }
   } highlightSect();
   $('a').click(function() { setTimeout(highlightSect, 50); });
-  $('.nav-tabs a').click(function() { 
+  $('.nav-pills a').click(function() { 
     $(this).tab('show'); return false;
   }); 
   $('.list-toggle').on('click', function() {
-    $(this).toggleClass('glyphicon-chevron-right').toggleClass('glyphicon-chevron-down');
+    $(this).toggleClass('fa-plus-square').toggleClass('fa-minus-square');
   }); 
   $('.split-bar').mousedown(function (e) { e.preventDefault();
     var min = 200; var max = 800; var mainmin = 200;
@@ -32,6 +32,7 @@ $(document).ready(function() {
   }, false);
   function isChildOf(child, parent) { if (child.parentNode === parent) { return true; } else if (child.parentNode === null) { return false; } else { return isChildOf(child.parentNode, parent); } }
   function checkSize() { if($('.navbar-collapse').css('display') == 'none') $('#searchResults').hide(); }
+  $.fn.collapse.Constructor.TRANSITION_DURATION = 0;
   var list = [
     {
       name: 'down',
@@ -4734,6 +4735,11 @@ $(document).ready(function() {
     ref: 'group__api__tree.html#1ga06e3fd50a1c4973bba83a264be874065'
     },
     {
+      name: 'VRGetPrevOfType',
+      brief: 'Gets the previous sibling of a specific type',
+    ref: 'group__api__tree.html#1ga0b54c4695bd2b648635b185a55e9c67e'
+    },
+    {
       name: 'VRIsDirtyEx',
       brief: 'Determines if a node value has been changed/dirtied',
     ref: 'group__api__tree.html#1ga12c79f76c2224edc16c74320f5d8701f'
@@ -4752,6 +4758,11 @@ $(document).ready(function() {
       name: 'VRGetScenesNode',
       brief: 'Gets the VRTree scenes node',
     ref: 'group__api__tree.html#1ga19ed2b2b1a2f12a76597e9652b2022e4'
+    },
+    {
+      name: 'VRSetParentEx',
+      brief: 'Sets the parent of a node, specifying a sibling to insert after',
+    ref: 'group__api__tree.html#1ga1e4bf67be1afd9729737c487eeaf50c6'
     },
     {
       name: 'VRFindChild',
@@ -4782,6 +4793,11 @@ $(document).ready(function() {
       name: 'VRGetSystemLibraryNode',
       brief: 'Gets the VRTree system library node',
     ref: 'group__api__tree.html#1ga4138a0ddfeed189dafe02ac5c69d6dd6'
+    },
+    {
+      name: 'VRGetPrev',
+      brief: 'Gets the previous sibling of a node',
+    ref: 'group__api__tree.html#1ga43b47956867e023b79be49709e050323'
     },
     {
       name: 'VRGetNodePath',
@@ -4910,7 +4926,7 @@ $(document).ready(function() {
     },
     {
       name: 'VRSetParent',
-      brief: 'Sets the parent of a node',
+      brief: 'Sets the parent of a node, adding it as the last child',
     ref: 'group__api__tree.html#1gac93a1918ef7d92ab8a169e29c8c4740d'
     },
     {
@@ -8320,7 +8336,7 @@ $(document).ready(function() {
     },
     {
       name: 'Advanced Topics',
-      brief: 'Application Commands',
+      brief: 'This section documents advanced functionality like semantics and shaders',
       ref: 'advanced.html'
     },
     {
@@ -8344,23 +8360,23 @@ $(document).ready(function() {
       ref: 'api_diagram.html'
     },
     {
-      name: 'Using the Visionary Render script console',
-      brief: 'Introduction to the Lua script console and VR Lua functions',
+      name: 'Using the Script Editor',
+      brief: 'The Script Editor is a simple text editor that permits you to write Lua scripts and GLSL codeWindows > Script EditorCtrl + L',
       ref: 'applua_intro.html'
     },
     {
       name: 'Architecture',
-      brief: 'In order to use this SDK to affect data in Visionary Render it is important to understand how the data is structured and what these structures represent',
+      brief: 'This section describes how to use this SDK to affect data in Visionary Render',
       ref: 'architecture.html'
     },
     {
       name: 'Best Practices',
-      brief: 'This page notes some best practices when using the VRTree API',
+      brief: 'This page documents some best practices when using the VRTree API',
       ref: 'best_practices.html'
     },
     {
-      name: 'Change Log',
-      brief: 'Lists changes in API functionality between versions of Visionary Render',
+      name: 'Changelog',
+      brief: 'This section lists API changes between different versions of Visionary Render',
       ref: 'changes.html'
     },
     {
@@ -8369,23 +8385,23 @@ $(document).ready(function() {
       ref: 'context_menu_howto.html'
     },
     {
-      name: 'Define a custom MetaNode',
+      name: 'Define a Custom MetaNode',
       brief: 'Demonstrates registration and usage of a custom node type',
       ref: 'define_metanode_howto.html'
     },
     {
-      name: 'Present a modal dialog',
+      name: 'Present a Modal Dialog',
       brief: 'Demonstrates presenting messages and questions to the user',
       ref: 'dialog_howto.html'
     },
     {
-      name: 'Enabling / Disabling plugins at runtime',
+      name: 'Enabling/Disabling Plugins at Runtime',
       brief: 'How to ensure your plugin cleanly unloads and reloads itself within Visionary Render',
       ref: 'dynamic_loading.html'
     },
     {
-      name: 'Using the Visionary Render script events system',
-      brief: 'Introduction to the VR Lua event system and registers',
+      name: 'Using the Script Event System',
+      brief: 'Visionary Render can automatically generate common scripts using EventsCreate > Event from the context menu',
       ref: 'eventlua_intro.html'
     },
     {
@@ -8400,22 +8416,22 @@ $(document).ready(function() {
     },
     {
       name: 'Getting Started',
-      brief: 'There are a number of programmable areas of Visionary Render that can help to improve your experience, or optimise your workflow by automating certain things',
+      brief: 'Visionary Render has various programmable areas that permit you to optimise your workflow or improve user experience',
       ref: 'getting_started.html'
     },
     {
-      name: 'How-To',
-      brief: 'Application Lua Topics',
+      name: 'How To',
+      brief: 'This section provides tutorials on how to achieve specific tasks with scripts and plugins',
       ref: 'howto.html'
     },
     {
-      name: 'Application Lua Topics',
-      brief: 'Work with Assembly nodes',
+      name: 'Scripting',
+      brief: 'This section provides tutorials on how to achieve specific tasks with Lua scripts',
       ref: 'howto_lua.html'
     },
     {
-      name: 'Plugin Topics',
-      brief: 'Provide a Data Importer',
+      name: 'Plugins',
+      brief: 'This section provides tutorials on how to achieve specific tasks with Lua and native plugins',
       ref: 'howto_plugins.html'
     },
     {
@@ -8425,51 +8441,51 @@ $(document).ready(function() {
     },
     {
       name: 'Overview',
-      brief: 'Welcome to the Visionary Render 2 Programming Guide',
+      brief: 'Welcome to the Visionary Render Programming Guide! This guide will teach you how to interact with Visionary Render by writing code',
       ref: 'indexpage.html'
     },
     {
-      name: 'Write to the application log',
+      name: 'Write to the Application Log',
       brief: 'Demonstrates how to write information to the application log',
       ref: 'logging_howto.html'
     },
     {
-      name: 'Work with Assembly nodes',
+      name: 'Work with Assembly Nodes',
       brief: 'Using Lua to interact with Assembly nodes',
       ref: 'lua_assembly_howto.html'
     },
     {
-      name: 'Work with Audio nodes',
+      name: 'Work with Audio Nodes',
       brief: 'Using Lua to interact with audio nodes',
       ref: 'lua_audio_howto.html'
     },
     {
-      name: 'Reference external data using the COM',
+      name: 'Reference External Data Using the COM',
       brief: 'Using Lua and the Microsoft Component Object Model ',
       ref: 'lua_com.html'
     },
     {
-      name: 'Coroutines in Lua plugins',
+      name: 'Coroutines in Lua Plugins',
       brief: 'Using coroutines to handle tasks that span multiple frames',
       ref: 'lua_coroutines.html'
     },
     {
-      name: 'Work with Light nodes',
+      name: 'Work with Light Nodes',
       brief: 'Using Lua to interact with Light nodes',
       ref: 'lua_light_howto.html'
     },
     {
-      name: 'Work with Level of Detail and GeoGroup nodes',
+      name: 'Work with Level of Detail and GeoGroup Nodes',
       brief: 'Using Lua to interact with LOD and GeoGroup nodes',
       ref: 'lua_lodgeo_howto.html'
     },
     {
-      name: 'Work with Material nodes',
+      name: 'Work with Material Nodes',
       brief: 'Using Lua to interact with material nodes',
       ref: 'lua_material_howto.html'
     },
     {
-      name: 'Work with Metadata and Attribute nodes',
+      name: 'Work with Metadata and Attribute Nodes',
       brief: 'Using Lua to interact with Metadata and Attributes',
       ref: 'lua_metadata_howto.html'
     },
@@ -8479,38 +8495,38 @@ $(document).ready(function() {
       ref: 'lua_observers_howto.html'
     },
     {
-      name: 'Using LuaSQL for ODBC connections',
+      name: 'Using LuaSQL for ODBC Connections',
       brief: 'Using ODBC drivers to interact with databases such as MySQL',
       ref: 'lua_odbc.html'
     },
     {
-      name: 'Work with Sequence nodes',
+      name: 'Work with Sequence Nodes',
       brief: 'Using Lua to interact with Sequence nodes',
       ref: 'lua_sequence_howto.html'
     },
     {
-      name: 'Work with Settings nodes',
+      name: 'Work with Settings Nodes',
       brief: 'Using Lua to interact with settings nodes',
       ref: 'lua_settings_howto.html'
     },
     {
-      name: 'Work with Movie nodes',
+      name: 'Work with Movie Nodes',
       brief: 'Using Lua to interact with movie nodes',
       ref: 'lua_video_howto.html'
     },
     {
-      name: 'Work with Visual nodes',
+      name: 'Work with Visual Nodes',
       brief: 'Using Lua to intract with Visual nodes',
       ref: 'lua_visual_howto.html'
     },
     {
-      name: 'Provide a Lua function',
+      name: 'Provide a Lua Function',
       brief: 'Demonstrates implementation of a plugin function that can be registered in the script environment',
       ref: 'luafunc_howto.html'
     },
     {
-      name: 'Setting up a Lua plugin',
-      brief: 'Boilerplate Lua code for implementing a loadable plugin',
+      name: 'Creating a Lua Plugin',
+      brief: 'This section assumes some familiarity with Lua, at least in the context of the Visionary Render script editor',
       ref: 'luaplugin_intro.html'
     },
     {
@@ -8524,7 +8540,7 @@ $(document).ready(function() {
       ref: 'nodes.html'
     },
     {
-      name: 'Implement an observer',
+      name: 'Implement an Observer',
       brief: 'Demonstrates how to implement observers and discusses the concepts',
       ref: 'observer_howto.html'
     },
@@ -8544,17 +8560,17 @@ $(document).ready(function() {
       ref: 'plugin_directories.html'
     },
     {
-      name: 'Setting up a native plugin',
-      brief: 'Boilerplate native code for implementing a loadable plugin',
+      name: 'Creating a Native Plugin',
+      brief: 'Environment Setup',
       ref: 'plugin_intro.html'
     },
     {
       name: 'Accessing the API',
-      brief: 'Loading the VRTree library and getting functions to call',
+      brief: 'The API functions can be accessed from the following DLLs:',
       ref: 'plugin_wrangle_api.html'
     },
     {
-      name: 'Update the loading screen',
+      name: 'Update the Loading Screen',
       brief: 'Demonstrates progress messages and progress bar percentages',
       ref: 'progress_howto.html'
     },
@@ -8569,12 +8585,17 @@ $(document).ready(function() {
       ref: 'scenegraph.html'
     },
     {
-      name: 'Writing surface shaders',
-      brief: 'Surface Shaders allow custom shading to be applied to visuals within the scene',
+      name: 'Writing Surface Shaders',
+      brief: 'A guide to writing shaders that can be applied to materials in your scene',
       ref: 'surface_shader_intro.html'
     },
     {
-      name: 'Implement an Update function',
+      name: 'Terminating Long Scripts',
+      brief: 'Describes the process when a script takes more than 30 seconds to execute',
+      ref: 'terminating_long_scripts.html'
+    },
+    {
+      name: 'Implement an Update Function',
       brief: 'Demonstrates how to receive regular updates every frame',
       ref: 'update_howto.html'
     },
@@ -8594,33 +8615,38 @@ $(document).ready(function() {
       ref: 'v13x_200_pivots.html'
     },
     {
-      name: 'Changes between Visionary Render 1.3.x and 2.0.0',
+      name: 'New in 2.0.0',
       brief: 'This page lists changes in version 2',
       ref: 'v13x_to_v2.html'
     },
     {
-      name: 'Changes between Visionary Render 2019.2 and 2019.3',
+      name: 'New in 2019.3',
       brief: 'This page lists changes in version 2019',
       ref: 'v2019_2_to_v2019_3.html'
     },
     {
-      name: 'Changes between Visionary Render 2.0.0 and 2.1.0',
+      name: 'New in 2020.1',
+      brief: 'This page lists changes in version 2020',
+      ref: 'v2019_3_to_v2020_1.html'
+    },
+    {
+      name: 'New in 2.1.0',
       brief: 'This page lists changes in version 2',
       ref: 'v20_to_v21.html'
     },
     {
-      name: 'Changes between Visionary Render 2.1.0 and 2.2.0',
+      name: 'New in 2.2.0',
       brief: 'This page lists changes in version 2',
       ref: 'v21_to_v22.html'
     },
     {
-      name: 'Changes between Visionary Render 2.2.0 and 2019.2',
+      name: 'New in 2019.2',
       brief: 'This page lists changes in version 2019',
       ref: 'v22_to_v2019_2.html'
     },
     {
-      name: 'Writing view shaders',
-      brief: 'A View Filter can perform custom rendering effects on the final rendered image, using a View Shader to accomplish this',
+      name: 'Writing View Shaders',
+      brief: 'A guide to writing filters that can be applied to the screen to perform specific rendering effects',
       ref: 'view_shader_intro.html'
     }  ];
 });
