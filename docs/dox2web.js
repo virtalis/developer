@@ -720,6 +720,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga01e61cb2083ff299559ac7c7b7940e79'
     },
     {
+      name: 'vrSettingWrite',
+      brief: 'Writes the value of a setting',
+    ref: 'group__api__lua.html#1ga023b65361133210fd1ac2a484443428f'
+    },
+    {
       name: 'vrNodeGetLocalTransform',
       brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1ga03640d9a878c60af717f86926fd0f9c3'
@@ -1650,11 +1655,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga682fa888f06368f7dcf93988b19e4fa4'
     },
     {
-      name: 'vrIsToolEnabled',
-      brief: 'Tests whether a named Tool is enabled',
-    ref: 'group__api__lua.html#1ga68992662245abfb831609f235d5cf68c'
-    },
-    {
       name: 'vrPopupScriptWindowAndShow',
       brief: 'DEPRECATED - use vrShowScriptWindow',
     ref: 'group__api__lua.html#1ga68f3ea41730c33cc6638a1455ae0661b'
@@ -1663,16 +1663,6 @@ $(document).ready(function() {
       name: 'vrHistoryClear',
       brief: 'Erases the undo history',
     ref: 'group__api__lua.html#1ga690b379966f66dd2b6fe3a1c89c57377'
-    },
-    {
-      name: 'vrSettingWrite',
-      brief: 'Writes the value of a setting',
-    ref: 'group__api__lua.html#1ga69289ab883f97c6239f4e91964cc251d'
-    },
-    {
-      name: 'vrSettingGetNode',
-      brief: 'Gets an application setting node from the user registry, or a scene override if it exists',
-    ref: 'group__api__lua.html#1ga69b6e8662ab4743911fee8080b5d4b25'
     },
     {
       name: 'vrShowSettingsWindow',
@@ -1815,6 +1805,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7792348627827d4087732523c5c0fc57'
     },
     {
+      name: 'vrSettingGetNode',
+      brief: 'Gets an application setting node from the user registry, or a scene override if it exists',
+    ref: 'group__api__lua.html#1ga77ca277ff2f15252bc081ce13c8c942c'
+    },
+    {
       name: 'vrIsDoublePrecision',
       brief: 'Returns true if the scenegraph uses double precision values for matrices etc',
     ref: 'group__api__lua.html#1ga7926aaebfb8f888d750d8d3c9b1f3505'
@@ -1885,6 +1880,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7d5f87b4e04477ce9981e48eecdf3990'
     },
     {
+      name: 'vrSettingGet',
+      brief: 'Gets an application setting from the user registry, or a scene override if it exists',
+    ref: 'group__api__lua.html#1ga7d75051afeb1781ce83861b995effcc4'
+    },
+    {
       name: 'vrShowPropertyWindow',
       brief: 'Pops up the application property editor for the specified view selection',
     ref: 'group__api__lua.html#1ga7da90a315b5f78e55df0279a011ca43f'
@@ -1915,11 +1915,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7fc14fa974d811b8de5468b56449ea1a'
     },
     {
-      name: 'vrSetToolEnabled',
-      brief: 'Sets the Enabled state of a named Tool',
-    ref: 'group__api__lua.html#1ga805dfcc5871dcafd442f044978ee038e'
-    },
-    {
       name: 'vrProgressBegin',
       brief: 'Begins showing the progress display',
     ref: 'group__api__lua.html#1ga8096016ca0e9021c334aafc84268b49b'
@@ -1933,6 +1928,11 @@ $(document).ready(function() {
       name: 'vrNodeGetWorldTransform',
       brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1ga81629a86625cb5d3343c9db9bb92e552'
+    },
+    {
+      name: 'vrGetHoldingUser',
+      brief: 'Finds the user who is holding the specified node with a tracked controller receives a single user local user1, user2 = vrGetHoldingUser receives up to two users local users = { vrGetHoldingUser receives all users in a table',
+    ref: 'group__api__lua.html#1ga81b1ff4cba8ad518bae17a6aff35f45b'
     },
     {
       name: 'vrNodeGetRotation',
@@ -1958,6 +1958,11 @@ $(document).ready(function() {
       name: 'vrNodeArraySetSize',
       brief: 'Sets the size of an array property',
     ref: 'group__api__lua.html#1ga83909d23daeedb86b9a8a443e20babf7'
+    },
+    {
+      name: 'vrIsToolEnabled',
+      brief: 'Tests whether a named Tool is enabled',
+    ref: 'group__api__lua.html#1ga83f6d9ebe01ebcd884a6eb5d83bf95e0'
     },
     {
       name: 'vrSphereTransform',
@@ -2003,6 +2008,11 @@ $(document).ready(function() {
       name: 'vrQuaternionFromAxisAngle',
       brief: 'Return a quaternion constructed from a rotation around an axis',
     ref: 'group__api__lua.html#1ga8875d36b708a868a2af338d2c04cbb17'
+    },
+    {
+      name: 'vrGrabObjectWithTrackedHand',
+      brief: 'Attaches a target node to the hand',
+    ref: 'group__api__lua.html#1ga887de7d93fe98ebc9efe29e98faa1cd6'
     },
     {
       name: 'vrRequestFolder',
@@ -2213,11 +2223,6 @@ $(document).ready(function() {
       name: 'vrHistoryStepBack',
       brief: 'Undoes the history to the previous history mark',
     ref: 'group__api__lua.html#1ga9b00b67e2962becd0a32e057011a9fe9'
-    },
-    {
-      name: 'vrReleaseObjectFromTrackedHand',
-      brief: 'Drop the grabbed object so it is no longer linked to the tracked hand',
-    ref: 'group__api__lua.html#1ga9b167d64feab3b397e181eed1b36d433'
     },
     {
       name: 'vrNodeComposeTransform',
@@ -2570,6 +2575,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gab83a251bec9d86052802d746c516d811'
     },
     {
+      name: 'vrSettingRead',
+      brief: 'Reads the value of a setting',
+    ref: 'group__api__lua.html#1gab86952a02a1101953a5d52b864bcfb02'
+    },
+    {
       name: 'vrProjInvTransformVec',
       brief: 'Transforms a vector by the inverse of the current projection matrix',
     ref: 'group__api__lua.html#1gab89b733e4c3c6ec71f8d0ac8a094cfb2'
@@ -2590,11 +2600,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gab98d958d6646a7931a1078c6f4c20257'
     },
     {
-      name: 'vrGrabObjectWithTrackedHand',
-      brief: 'Links target to the tracked hand so it moves as the tracked hand moves',
-    ref: 'group__api__lua.html#1gab9b5cb79e78bf570dc156c8e7f0e8d91'
-    },
-    {
       name: 'vrShowNodeProperties',
       brief: 'Pops up the application property editor for the specified view selection',
     ref: 'group__api__lua.html#1gab9befe35073ca5ba102c1380c82b9fe7'
@@ -2608,6 +2613,11 @@ $(document).ready(function() {
       name: 'vrNodeGetPositionY',
       brief: 'Gets the world y position of the node',
     ref: 'group__api__lua.html#1gabb6674392ccf5cc0263b5292d41bf777'
+    },
+    {
+      name: 'vrReleaseObjectFromTrackedHand',
+      brief: 'Releases a node attached to the hand',
+    ref: 'group__api__lua.html#1gabb9c1aba4906aae12bbd04cd51fd1323'
     },
     {
       name: 'vrScriptEditorGetInsertPos',
@@ -2910,11 +2920,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gada2b07c5e0467437194b336b487e6e52'
     },
     {
-      name: 'vrSettingGet',
-      brief: 'Gets an application setting from the user registry, or a scene override if it exists',
-    ref: 'group__api__lua.html#1gadb009119cbca6aa4ccb1055e0244d353'
-    },
-    {
       name: 'vrNodeGetNoHistory',
       brief: 'Queries whether this node can be recorded in the history for undo/redo operations',
     ref: 'group__api__lua.html#1gadb588ab37ef3cf1de26e60b849cbee45'
@@ -3092,7 +3097,7 @@ $(document).ready(function() {
     {
       name: 'vrToggleToolEnabled',
       brief: 'Toggles the Enabled state of a named Tool',
-    ref: 'group__api__lua.html#1gae7da561b5b7cd7753f189743bb98e529'
+    ref: 'group__api__lua.html#1gae7e76cfbea5347bd26a7a569eb483ac2'
     },
     {
       name: 'vrShowSequence',
@@ -3155,11 +3160,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gaeb2963c680970a13e1d00f3f5f8014b7'
     },
     {
-      name: 'vrSettingRead',
-      brief: 'Reads the value of a setting',
-    ref: 'group__api__lua.html#1gaef85da120eefe323eb0e38a9ce34c7cb'
-    },
-    {
       name: 'vrYield',
       brief: 'Yields the Lua execution back to the application for the ',
     ref: 'group__api__lua.html#1gaf006dd0b9b28944df930a54119c6e7c2'
@@ -3183,6 +3183,11 @@ $(document).ready(function() {
       name: 'vrMat4Ortho',
       brief: 'Return an orthographic projection matrix',
     ref: 'group__api__lua.html#1gaf10906f3a7e8efcb61d89db490291ba6'
+    },
+    {
+      name: 'vrSetToolEnabled',
+      brief: 'Sets the Enabled state of a named Tool',
+    ref: 'group__api__lua.html#1gaf1f67abd0282ed12c46d70e31121cf44'
     },
     {
       name: 'vrDeveloperSaveTree',
@@ -8371,7 +8376,7 @@ $(document).ready(function() {
     },
     {
       name: 'Best Practices',
-      brief: 'This page documents some best practices when using the VRTree API',
+      brief: 'Local vs Global',
       ref: 'best_practices.html'
     },
     {
@@ -8416,7 +8421,7 @@ $(document).ready(function() {
     },
     {
       name: 'Getting Started',
-      brief: 'Visionary Render has various programmable areas that permit you to optimise your workflow or improve user experience',
+      brief: 'You can program Visionary Render to optimise your workflow or improve your user experience',
       ref: 'getting_started.html'
     },
     {
@@ -8526,7 +8531,7 @@ $(document).ready(function() {
     },
     {
       name: 'Creating a Lua Plugin',
-      brief: 'This section assumes some familiarity with Lua, at least in the context of the Visionary Render script editor',
+      brief: 'Modules',
       ref: 'luaplugin_intro.html'
     },
     {
@@ -8628,6 +8633,11 @@ $(document).ready(function() {
       name: 'New in 2020.1',
       brief: 'This page lists changes in version 2020',
       ref: 'v2019_3_to_v2020_1.html'
+    },
+    {
+      name: 'New in 2020.2',
+      brief: 'This page lists changes in version 2020',
+      ref: 'v2020_1_to_v2020_2.html'
     },
     {
       name: 'New in 2.1.0',
