@@ -28,7 +28,7 @@
     <li><a href="modules.html">API</a></li>
   </ul>
 </nav>
-<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="changes.html">Changelog</a></li><li class = "breadcrumb-item active">New in 2019.3</li></ol></nav><h1>New in 2019.3</h1><p>This page lists changes in version 2019.3 affecting user-facing APIs. Current C API is now 1.10</p><p><ul><li><p>VRRemoveCallback Ex variants added, this allows you to remove callbacks specific to a piece of user data.</p></li></ul></p><p><div id="frag_Y2lbKtSJh85j"><ul class="nav nav-pills"><li class="active"><a href="#CY2lbKtSJh85j">C</a></li><li><a href="#CxxY2lbKtSJh85j">C++</a></li></ul><div class="tab-content"><div id="CY2lbKtSJh85j" class="tab-pane active"><pre><code>typedef struct MyManager_
+<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="changes.html">Changelog</a></li><li class = "breadcrumb-item active">New in 2019.3</li></ol></nav><h1>New in 2019.3</h1><p>This page lists changes in version 2019.3 affecting user-facing APIs. Current C API is now 1.10</p><p><ul><li><p>VRRemoveCallback Ex variants added, this allows you to remove callbacks specific to a piece of user data.</p></li></ul></p><p><div id="frag_vF6dmub2YFkI"><ul class="nav nav-pills"><li class="active"><a href="#CvF6dmub2YFkI">C</a></li><li><a href="#CxxvF6dmub2YFkI">C++</a></li></ul><div class="tab-content"><div id="CvF6dmub2YFkI" class="tab-pane active"><pre><code>typedef struct MyManager_
 {
   uint32_t property;
   void (*translate)(<a href="group__api__types.html#1ga3c71423354ddfdf4e557ebb3ac0e572e" title="A handle to a VRTree node">HNode</a> vrNode, const char* text);
@@ -53,7 +53,7 @@ void release(const char* metaName, MyManager* manager)
   <a href="group__api__observer.html#1ga49ae1e8e649a6d377a967d21988f19a5" title="Unregisters a function called whenever a node is modified">VRRemoveCallbackNodeValuesChangedEx</a>(metaName, &amp;onValuesChanged, manager);
 }
 </code></pre></div>
-<div id="CxxY2lbKtSJh85j" class="tab-pane"><pre><code>using namespace vrtree;
+<div id="CxxvF6dmub2YFkI" class="tab-pane"><pre><code>using namespace vrtree;
 using namespace <a href="namespacevrtree__cpp.html" title="Namespace containing a collection of helper functions for simplifying reading of C++ objects out of the C API (e">vrtree_cpp</a>;
 
 struct MyManager2

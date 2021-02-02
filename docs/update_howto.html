@@ -28,7 +28,7 @@
     <li><a href="modules.html">API</a></li>
   </ul>
 </nav>
-<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="howto.html">How To</a></li><li class = "breadcrumb-item"><a href="howto_plugins.html">Plugins</a></li><li class = "breadcrumb-item active">Implement an Update Function</li></ol></nav><h1>Implement an Update Function</h1><p>Demonstrates how to receive regular updates every frame.</p><p>A plugin may wish to be notified regularly of updates. To do this it should register a callback using <a href="group__api__observer.html#1gafbba66995a95226599f720434b3fcca7" title="Registers a function to be called whenever VRTree updates (either by the host application or by a call to VRUpdate) ">VRAddCallbackUpdate</a>.</p><p>Lua plugins may use <code>__registerCallback</code> to register themselves with the timestep function which is called every frame.</p><p><div id="frag_NKw4wMa6ohjB"><ul class="nav nav-pills"><li class="active"><a href="#CxxxCxxNKw4wMa6ohjB">C / C++</a></li><li><a href="#LuaNKw4wMa6ohjB">Lua</a></li></ul><div class="tab-content"><div id="CxxxCxxNKw4wMa6ohjB" class="tab-pane active"><pre><code>static void myUpdate(double deltaTime, void* userData)
+<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="howto.html">How To</a></li><li class = "breadcrumb-item"><a href="howto_plugins.html">Plugins</a></li><li class = "breadcrumb-item active">Implement an Update Function</li></ol></nav><h1>Implement an Update Function</h1><p>Demonstrates how to receive regular updates every frame.</p><p>A plugin may wish to be notified regularly of updates. To do this it should register a callback using <a href="group__api__observer.html#1gafbba66995a95226599f720434b3fcca7" title="Registers a function to be called whenever VRTree updates (either by the host application or by a call to VRUpdate) ">VRAddCallbackUpdate</a>.</p><p>Lua plugins may use <code>__registerCallback</code> to register themselves with the timestep function which is called every frame.</p><p><div id="frag_30wXvWYRMoq3"><ul class="nav nav-pills"><li class="active"><a href="#CxxxCxx30wXvWYRMoq3">C / C++</a></li><li><a href="#Lua30wXvWYRMoq3">Lua</a></li></ul><div class="tab-content"><div id="CxxxCxx30wXvWYRMoq3" class="tab-pane active"><pre><code>static void myUpdate(double deltaTime, void* userData)
 {
   //perform an operation regularly  
 }
@@ -39,7 +39,7 @@
   <a href="group__api__observer.html#1gafbba66995a95226599f720434b3fcca7" title="Registers a function to be called whenever VRTree updates (either by the host application or by a call to VRUpdate) ">VRAddCallbackUpdate</a>(&amp;myUpdate, NULL);
 }
 </code></pre></div>
-<div id="LuaNKw4wMa6ohjB" class="tab-pane"><pre><code class="lua">local function myTimestep()
+<div id="Lua30wXvWYRMoq3" class="tab-pane"><pre><code class="lua">local function myTimestep()
 
 end
 

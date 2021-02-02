@@ -5260,6 +5260,36 @@ $(document).ready(function() {
     ref: 'struct_meta___audio_sound.html#1ae523eb34299aebedbf29af692502a5b7'
     },
     {
+      name: 'TransformMode',
+      brief: 'Values for Idx_TransformMode',
+    ref: 'struct_meta___audio_stream.html#1a4d327aefca5b9060f488670035018329'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___audio_stream.html#1a8236a49c1c449a3f5671389ea55c0e03'
+    },
+    {
+      name: 'Meta_AudioStream',
+      brief: '',
+    ref: 'struct_meta___audio_stream.html#1aa08a09b75f954d18d95d8d9b0b178f08'
+    },
+    {
+      name: 'Meta_AudioStreamBuffer',
+      brief: '',
+    ref: 'struct_meta___audio_stream_buffer.html#1a4da5115e57c0c7b2eed34144c2e6f9cd'
+    },
+    {
+      name: '@0',
+      brief: '',
+    ref: 'struct_meta___audio_stream_buffer.html#1a511d75c07eb25ca484db7d77dc25bfdd'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___audio_stream_buffer.html#1ac4b7bb52ad9657fe91eeccd90f9c35a0'
+    },
+    {
       name: 'IDX',
       brief: 'Property Index',
     ref: 'struct_meta___audio_track.html#1a0394751580da91da5f7cf1eeeb2bfff7'
@@ -5430,9 +5460,9 @@ $(document).ready(function() {
     ref: 'struct_meta___daqri_viewport.html#1a83a6367fb412ea9a24d542fc64ba0db3'
     },
     {
-      name: '@9',
+      name: '@10',
       brief: 'Property index',
-    ref: 'struct_meta___dimension.html#1a51ad788c34aaf22384edcb9b994cb81e'
+    ref: 'struct_meta___dimension.html#1a21a89a590099262eafab7c08eb775cf9'
     },
     {
       name: 'IDX',
@@ -5550,9 +5580,9 @@ $(document).ready(function() {
     ref: 'struct_meta___gesture_guard.html#1abb042651fe65138c50f0752b71e50940'
     },
     {
-      name: '@4',
+      name: '@5',
       brief: 'Property index',
-    ref: 'struct_meta___gradient.html#1ae4ad8ab8baf5e392f5ec1df36513f876'
+    ref: 'struct_meta___gradient.html#1a06cb24c3348822ff8d333884ec377671'
     },
     {
       name: 'IDX',
@@ -5560,9 +5590,9 @@ $(document).ready(function() {
     ref: 'struct_meta___gradient_panel_style.html#1a7634063f834ad7453ef16380ae5faf35'
     },
     {
-      name: '@5',
+      name: '@6',
       brief: 'Property index',
-    ref: 'struct_meta___gradient_point.html#1a5ae92d8ab89290e11037e1fddb149739'
+    ref: 'struct_meta___gradient_point.html#1ad4414f8f18cf9035a595d26b0e142ac0'
     },
     {
       name: 'IDX',
@@ -5570,9 +5600,14 @@ $(document).ready(function() {
     ref: 'struct_meta___group_member.html#1ab322fc2dd971c49836b7e10ae232c40c'
     },
     {
-      name: '@17',
+      name: '@18',
       brief: '',
-    ref: 'struct_meta___gui_group_hint.html#1ab001fe9dfeee0ff69deddc0dede923ea'
+    ref: 'struct_meta___gui_group_hint.html#1a1b255398525033fe2fe5419282342544'
+    },
+    {
+      name: '@16',
+      brief: '',
+    ref: 'struct_meta___gui_hints.html#1a498db580e3cff8b3c39373721b7da072'
     },
     {
       name: 'SearchMode',
@@ -5582,27 +5617,17 @@ $(document).ready(function() {
     {
       name: '@15',
       brief: '',
-    ref: 'struct_meta___gui_hints.html#1aaad42d99ba35b289b2f2834327b1f0c9'
+    ref: 'struct_meta___gui_hints_link.html#1a971f5b254f3a2d85b1f341ee74d9a63f'
     },
     {
-      name: '@14',
+      name: '@17',
       brief: '',
-    ref: 'struct_meta___gui_hints_link.html#1a3cc782f4ce419baa5b6ef9a87fc80f3a'
+    ref: 'struct_meta___gui_option_hint.html#1a0da0f6771c93326730b57024fd06f370'
     },
     {
-      name: '@16',
+      name: '@19',
       brief: '',
-    ref: 'struct_meta___gui_option_hint.html#1ab8890d9b8c2cc0e7627a60c18cfd5749'
-    },
-    {
-      name: '@18',
-      brief: '',
-    ref: 'struct_meta___gui_order_hint.html#1ab33faa87a2c7a321423eb631b46def20'
-    },
-    {
-      name: '@7',
-      brief: 'Property index',
-    ref: 'struct_meta___haptic_device.html#1a04ca4431f3c03e1db877a3e76f111423'
+    ref: 'struct_meta___gui_order_hint.html#1a9272d2f92e7efc3ec5379093fd29946c'
     },
     {
       name: 'SpaceMode',
@@ -5615,14 +5640,19 @@ $(document).ready(function() {
     ref: 'struct_meta___haptic_device.html#1a2a94607307a17ab8ef101e2d1f58ad1c'
     },
     {
+      name: '@8',
+      brief: 'Property index',
+    ref: 'struct_meta___haptic_device.html#1aef5a5f697980796a01261de24d9cd9ae'
+    },
+    {
       name: 'CollisionNodeType',
       brief: 'Values for Idx_Type',
     ref: 'struct_meta___haptic_node.html#1a7d73c30b3db64ac9582839b033e094d7'
     },
     {
-      name: '@6',
+      name: '@7',
       brief: 'Property index',
-    ref: 'struct_meta___haptic_node.html#1ad887251978aae39cfb72af861e78586b'
+    ref: 'struct_meta___haptic_node.html#1a8a90a5e0cdaa1f2f13686d61c357a40b'
     },
     {
       name: 'IDX',
@@ -5645,14 +5675,14 @@ $(document).ready(function() {
     ref: 'struct_meta___i_ray_material_file.html#1a0bcdfa619c395a19157bc5bc29eadfc1'
     },
     {
+      name: '@1',
+      brief: '',
+    ref: 'struct_meta___i_ray_material_file.html#1a846ee363dc25266354f7908a22ed531c'
+    },
+    {
       name: 'IDX',
       brief: '',
     ref: 'struct_meta___i_ray_material_file.html#1a8b8784f25368819fae36221c2d4dcfa2'
-    },
-    {
-      name: '@0',
-      brief: '',
-    ref: 'struct_meta___i_ray_material_file.html#1aa6fa3f7fc39aeb9d663b9a1765d6b368'
     },
     {
       name: 'IDX',
@@ -5815,9 +5845,9 @@ $(document).ready(function() {
     ref: 'struct_meta___material_selector.html#1a603e51fe06df8bbb746af7c3632aa949'
     },
     {
-      name: '@8',
+      name: '@9',
       brief: 'Property index',
-    ref: 'struct_meta___measuring_point.html#1ac609b92102525287808dcaa7682be59d'
+    ref: 'struct_meta___measuring_point.html#1ab7d04781156fcdb45572267ff4afdd57'
     },
     {
       name: 'IDX',
@@ -5975,14 +6005,14 @@ $(document).ready(function() {
     ref: 'struct_meta___oculus_viewport.html#1a2d16c4b0325aa1eeff3a9d57d048c4cc'
     },
     {
-      name: '@10',
-      brief: '',
-    ref: 'struct_meta___op_progress.html#1a1052b62fe4d69cb5981aa7d122b0e969'
-    },
-    {
       name: '@11',
       brief: '',
-    ref: 'struct_meta___op_progress_yield.html#1ad16b0b53802e05402186d897680a28ca'
+    ref: 'struct_meta___op_progress.html#1a93276521e3e99e70209722884e9dec4c'
+    },
+    {
+      name: '@12',
+      brief: '',
+    ref: 'struct_meta___op_progress_yield.html#1ab7257377026933d6eaf012269124eaea'
     },
     {
       name: 'IDX',
@@ -6270,14 +6300,14 @@ $(document).ready(function() {
     ref: 'struct_meta___prop_semantics_1_1_range.html#1ac99365be4a3d0cb8141fe855202c99c6'
     },
     {
-      name: '@12',
-      brief: '',
-    ref: 'struct_meta___prop_semantics.html#1ae38fd9a061bfab4ca8a13b8a25820d3c'
-    },
-    {
       name: '@13',
       brief: '',
-    ref: 'struct_meta___prop_semantics_link.html#1acb6e58ca1327499870d80b9366866e28'
+    ref: 'struct_meta___prop_semantics.html#1ae21994352b69cfdad096871366b80a9d'
+    },
+    {
+      name: '@14',
+      brief: '',
+    ref: 'struct_meta___prop_semantics_link.html#1a5cfa4d39b71a500be9ba1a674bdd67c3'
     },
     {
       name: 'IDX',
@@ -6505,9 +6535,9 @@ $(document).ready(function() {
     ref: 'struct_meta___std_material.html#1a983281ba9b2ca911221377923fc6377d'
     },
     {
-      name: '@2',
+      name: '@3',
       brief: '',
-    ref: 'struct_meta___surface_shader_definition.html#1a33d05ce223da2c531ea563a9ca0df301'
+    ref: 'struct_meta___surface_shader_definition.html#1a133f45e29e13a3ab1d1bc62cd39ac9c6'
     },
     {
       name: 'IDX',
@@ -6525,14 +6555,14 @@ $(document).ready(function() {
     ref: 'struct_meta___surface_shader_instance.html#1a2a88758a8b7045bacff38fa39cdd0359'
     },
     {
+      name: '@4',
+      brief: '',
+    ref: 'struct_meta___surface_shader_instance.html#1a8eb6f1784cf5ab44d2cb9169936cd343'
+    },
+    {
       name: 'IDX',
       brief: '',
     ref: 'struct_meta___surface_shader_instance.html#1abc1b604b0d3509db704894bdc16daf56'
-    },
-    {
-      name: '@3',
-      brief: '',
-    ref: 'struct_meta___surface_shader_instance.html#1aeef90b76aaefadcf3b55544869662861'
     },
     {
       name: 'IDX',
@@ -6670,14 +6700,14 @@ $(document).ready(function() {
     ref: 'struct_meta___user.html#1af19c8bf9445cce160bbe7ce5c54dd80e'
     },
     {
+      name: '@2',
+      brief: '',
+    ref: 'struct_meta___user_link.html#1aa54668c5ed7634effa52682f34e0caa1'
+    },
+    {
       name: 'Meta_UserLink',
       brief: '',
     ref: 'struct_meta___user_link.html#1ae26d35a5418fb86e0b44234cb758a1a0'
-    },
-    {
-      name: '@1',
-      brief: '',
-    ref: 'struct_meta___user_link.html#1af0d21405ffc5ee062175c5d5a6ed4d56'
     },
     {
       name: 'IDX',

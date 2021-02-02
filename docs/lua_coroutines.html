@@ -28,7 +28,7 @@
     <li><a href="modules.html">API</a></li>
   </ul>
 </nav>
-<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="advanced.html">Advanced Topics</a></li><li class = "breadcrumb-item active">Coroutines in Lua Plugins</li></ol></nav><div class="page-toc"><ol><li><strong>Contents</strong></li><li><a href="#">Coroutines in Lua Plugins</a></li><ol><li><a href="#Uh3q5GnAzt2E">Life without coroutines</a></li><li><a href="#HFb0kbTlLfHY">The coroutine way</a></li><ol><li><a href="#HWEeaXbS6fFs">Resuming</a></li><li><a href="#5APOnegsGrv7">Time based yield</a></li><li><a href="#8fL1LgCLdt2e">Running a function as a coroutine</a></li></ol></div><h1>Coroutines in Lua Plugins</h1><p>Using coroutines to handle tasks that span multiple frames</p><p>A number of actions in Visionary Render involve work being done over multiple frames, or seconds. Examples of these are loading and saving files, or responding to property changes.</p><p>While it is possible to write Lua code to take this into account, it is often cleaner to keep a sequential list of actions sequential in the code.</p><p><h2 class="anchor" id="Uh3q5GnAzt2E">Life without coroutines</h2></p><p>Consider this example of loading a file and doing something with it:</p><p><div id="frag_VdW0juuaGIXH"><ul class="nav nav-pills"><li class="active"><a href="#LuaVdW0juuaGIXH">Lua</a></li></ul><div class="tab-content"><div id="LuaVdW0juuaGIXH" class="tab-pane active"><pre><code>local function onFileLoaded(file)
+<div class="shove"><div class="container-fluid"><div class="col-sm-10 col-sm-push-2 main"><nav aria-label = "breadcrumb"><ol class="breadcrumb forward-slash"><li class = "breadcrumb-item "><a href = "index.html">Overview</a></li><li class = "breadcrumb-item"><a href="advanced.html">Advanced Topics</a></li><li class = "breadcrumb-item active">Coroutines in Lua Plugins</li></ol></nav><div class="page-toc"><ol><li><strong>Contents</strong></li><li><a href="#">Coroutines in Lua Plugins</a></li><ol><li><a href="#HHoCDKlz54u8">Life without coroutines</a></li><li><a href="#I4UlyQlTOiU5">The coroutine way</a></li><ol><li><a href="#nL6v2BEr08Gw">Resuming</a></li><li><a href="#sfG2WGmdJi3R">Time based yield</a></li><li><a href="#vVUYk7akr1Mj">Running a function as a coroutine</a></li></ol></div><h1>Coroutines in Lua Plugins</h1><p>Using coroutines to handle tasks that span multiple frames</p><p>A number of actions in Visionary Render involve work being done over multiple frames, or seconds. Examples of these are loading and saving files, or responding to property changes.</p><p>While it is possible to write Lua code to take this into account, it is often cleaner to keep a sequential list of actions sequential in the code.</p><p><h2 class="anchor" id="HHoCDKlz54u8">Life without coroutines</h2></p><p>Consider this example of loading a file and doing something with it:</p><p><div id="frag_NNyIt0EYyzdR"><ul class="nav nav-pills"><li class="active"><a href="#LuaNNyIt0EYyzdR">Lua</a></li></ul><div class="tab-content"><div id="LuaNNyIt0EYyzdR" class="tab-pane active"><pre><code>local function onFileLoaded(file)
   --when the file is loaded, print the name of the first node in the scene
   print(vrTreeRoot().Scenes:child():getName())
 end
@@ -41,7 +41,7 @@ local function loadFile()
 end
 </code></pre></div>
 </div></div>
-In this example, <code>vrPostCommand</code> may not execute immediately. When it does execute, opening a document can take some time so this Lua script can't wait for the file to load and continue where it left off. It has to make use of a callback function to do the work after the file loading operation.</p><p>For this contrived example it's not particularly beneficial to introduce coroutines, but what about something like this?</p><p><div id="frag_mWfvHvcF6k5F"><ul class="nav nav-pills"><li class="active"><a href="#LuamWfvHvcF6k5F">Lua</a></li></ul><div class="tab-content"><div id="LuamWfvHvcF6k5F" class="tab-pane active"><pre><code>local function timestep(delta)
+In this example, <code>vrPostCommand</code> may not execute immediately. When it does execute, opening a document can take some time so this Lua script can't wait for the file to load and continue where it left off. It has to make use of a callback function to do the work after the file loading operation.</p><p>For this contrived example it's not particularly beneficial to introduce coroutines, but what about something like this?</p><p><div id="frag_sHSR7URZCtcC"><ul class="nav nav-pills"><li class="active"><a href="#LuasHSR7URZCtcC">Lua</a></li></ul><div class="tab-content"><div id="LuasHSR7URZCtcC" class="tab-pane active"><pre><code>local function timestep(delta)
   -- do something to count the time delta and trigger the screenshot tool when necessary
   if myCount &gt; 0.1 then
     vrLocalUserNode().Toolbox.ScreenCaptureTool.Enabled = true
@@ -71,7 +71,7 @@ local function myTasks()
 end
 </code></pre></div>
 </div></div>
-This script is very confusing. The way to achieve the simple list of steps is very complicated.</p><p>Wouldn't it be better if the entire code sample could look like this?</p><p><div id="frag_cjQsu829It7x"><ul class="nav nav-pills"><li class="active"><a href="#LuacjQsu829It7x">Lua</a></li></ul><div class="tab-content"><div id="LuacjQsu829It7x" class="tab-pane active"><pre><code>local function myTasks()
+This script is very confusing. The way to achieve the simple list of steps is very complicated.</p><p>Wouldn't it be better if the entire code sample could look like this?</p><p><div id="frag_LMNCTyy6T84j"><ul class="nav nav-pills"><li class="active"><a href="#LuaLMNCTyy6T84j">Lua</a></li></ul><div class="tab-content"><div id="LuaLMNCTyy6T84j" class="tab-pane active"><pre><code>local function myTasks()
   vrBodyFlyTo(someNode, 0.1)
   vr_yield(0.1)
   vrLocalUserNode().Toolbox.ScreenCaptureTool.Enabled = true
@@ -81,10 +81,10 @@ This script is very confusing. The way to achieve the simple list of steps is ve
   vrLocalUserNode().Toolbox.ScreenCaptureTool.Enabled = true
 end
 </code></pre></div>
-</div></div><h2 class="anchor" id="HFb0kbTlLfHY">The coroutine way</h2></p><p>Providing the yield function requires a bit of boilerplate and there are two method implementations required to account for both cases of waiting for time/updates, and waiting for document events.</p><p><h3 class="anchor" id="HWEeaXbS6fFs">Resuming</h3></p><p>Before we write a yield function, we should write a function capable of resuming the coroutine. This function can then be used as the function parameter to <code>__registerCallback</code> to automatically resume the Lua execution when the specified event is fired by Visionary Render.</p><p>First, define a variable local to your plugin - this can be called anything, but I chose <code>lu_co</code></p><p><div id="frag_73IF2mlfNujA"><ul class="nav nav-pills"><li class="active"><a href="#Lua73IF2mlfNujA">Lua</a></li></ul><div class="tab-content"><div id="Lua73IF2mlfNujA" class="tab-pane active"><pre><code>local lu_co
+</div></div><h2 class="anchor" id="I4UlyQlTOiU5">The coroutine way</h2></p><p>Providing the yield function requires a bit of boilerplate and there are two method implementations required to account for both cases of waiting for time/updates, and waiting for document events.</p><p><h3 class="anchor" id="nL6v2BEr08Gw">Resuming</h3></p><p>Before we write a yield function, we should write a function capable of resuming the coroutine. This function can then be used as the function parameter to <code>__registerCallback</code> to automatically resume the Lua execution when the specified event is fired by Visionary Render.</p><p>First, define a variable local to your plugin - this can be called anything, but I chose <code>lu_co</code></p><p><div id="frag_6LFlPtyQbKkk"><ul class="nav nav-pills"><li class="active"><a href="#Lua6LFlPtyQbKkk">Lua</a></li></ul><div class="tab-content"><div id="Lua6LFlPtyQbKkk" class="tab-pane active"><pre><code>local lu_co
 </code></pre></div>
 </div></div>
-Our resume function uses this to resume the coroutine:</p><p><div id="frag_KRPhoAfiigfd"><ul class="nav nav-pills"><li class="active"><a href="#LuaKRPhoAfiigfd">Lua</a></li></ul><div class="tab-content"><div id="LuaKRPhoAfiigfd" class="tab-pane active"><pre><code>local function vr_resume()
+Our resume function uses this to resume the coroutine:</p><p><div id="frag_7Q75lnyzil0J"><ul class="nav nav-pills"><li class="active"><a href="#Lua7Q75lnyzil0J">Lua</a></li></ul><div class="tab-content"><div id="Lua7Q75lnyzil0J" class="tab-pane active"><pre><code>local function vr_resume()
   -- resume our coroutine
   local ok, err = coroutine.resume(lu_co)
   -- this block will trigger a Lua error if there are errors while running the coroutine.
@@ -95,7 +95,7 @@ Our resume function uses this to resume the coroutine:</p><p><div id="frag_KRPho
 end
 </code></pre></div>
 </div></div>
-Now your Lua script can wait for document events. The first example of loading a file now becomes this:</p><p><div id="frag_crtdYPp9VILp"><ul class="nav nav-pills"><li class="active"><a href="#LuacrtdYPp9VILp">Lua</a></li></ul><div class="tab-content"><div id="LuacrtdYPp9VILp" class="tab-pane active"><pre><code>local function loadFile()
+Now your Lua script can wait for document events. The first example of loading a file now becomes this:</p><p><div id="frag_1N0uEoXwQ2VB"><ul class="nav nav-pills"><li class="active"><a href="#Lua1N0uEoXwQ2VB">Lua</a></li></ul><div class="tab-content"><div id="Lua1N0uEoXwQ2VB" class="tab-pane active"><pre><code>local function loadFile()
   -- register our function to be called when the document is loaded
   __registerCallback(&quot;onDocumentLoaded&quot;, vr_resume)
   -- request that the document be loaded
@@ -106,25 +106,25 @@ Now your Lua script can wait for document events. The first example of loading a
   print(vrTreeRoot().Scenes:child():getName())
 end
 </code></pre></div>
-</div></div><h3 class="anchor" id="5APOnegsGrv7">Time based yield</h3></p><p>For simpler things like waiting some number of seconds, or just a single frame for property changes, we can write another helper function, <code>vr_yield</code>.</p><p><div id="frag_TCSmn3aB1eNr"><ul class="nav nav-pills"><li class="active"><a href="#LuaTCSmn3aB1eNr">Lua</a></li></ul><div class="tab-content"><div id="LuaTCSmn3aB1eNr" class="tab-pane active"><pre><code>local function vr_yield(time)
+</div></div><h3 class="anchor" id="sfG2WGmdJi3R">Time based yield</h3></p><p>For simpler things like waiting some number of seconds, or just a single frame for property changes, we can write another helper function, <code>vr_yield</code>.</p><p><div id="frag_Gw2viKrjl8um"><ul class="nav nav-pills"><li class="active"><a href="#LuaGw2viKrjl8um">Lua</a></li></ul><div class="tab-content"><div id="LuaGw2viKrjl8um" class="tab-pane active"><pre><code>local function vr_yield(time)
   -- we make use of the __deferredCall utility function to call vr_resume
   __deferredCall(vr_resume, time or 0)
   coroutine.yield()
 end
 </code></pre></div>
 </div></div>
-This adds a small wrapper around <code>coroutine.yield</code> which uses the global timestep callback to call our resume function some time in the future.</p><p>Calling <code>vr_yield()</code> with no parameters will result in the script being resumed in the next frame. Using a time value (e.g. <code>vr_yield(0.5)</code>) will resume the script approximately half a second from now. The timing is not completely exact because the timestep event is handed a delta time since the last frame. The lower the framerate, the less accurate this will be.</p><p><h3 class="anchor" id="8fL1LgCLdt2e">Running a function as a coroutine</h3></p><p>There is one final step required to allow these helpers to function, and that is to run the main function as a coroutine.</p><p>Given this small function:</p><p><div id="frag_rOJIxqc8778b"><ul class="nav nav-pills"><li class="active"><a href="#LuarOJIxqc8778b">Lua</a></li></ul><div class="tab-content"><div id="LuarOJIxqc8778b" class="tab-pane active"><pre><code>local function myTasks()
+This adds a small wrapper around <code>coroutine.yield</code> which uses the global timestep callback to call our resume function some time in the future.</p><p>Calling <code>vr_yield()</code> with no parameters will result in the script being resumed in the next frame. Using a time value (e.g. <code>vr_yield(0.5)</code>) will resume the script approximately half a second from now. The timing is not completely exact because the timestep event is handed a delta time since the last frame. The lower the framerate, the less accurate this will be.</p><p><h3 class="anchor" id="vVUYk7akr1Mj">Running a function as a coroutine</h3></p><p>There is one final step required to allow these helpers to function, and that is to run the main function as a coroutine.</p><p>Given this small function:</p><p><div id="frag_vI5qafX18N89"><ul class="nav nav-pills"><li class="active"><a href="#LuavI5qafX18N89">Lua</a></li></ul><div class="tab-content"><div id="LuavI5qafX18N89" class="tab-pane active"><pre><code>local function myTasks()
   vrBodyFlyTo(node, 1.0)
   vr_yield(1.0)
   print(&quot;finished!&quot;)
 end
 </code></pre></div>
 </div></div>
-to allow <code>vr_yield</code> to function, it should be enclosed in:</p><p><div id="frag_LPW9DqEKdFZ0"><ul class="nav nav-pills"><li class="active"><a href="#LuaLPW9DqEKdFZ0">Lua</a></li></ul><div class="tab-content"><div id="LuaLPW9DqEKdFZ0" class="tab-pane active"><pre><code>lu_co = coroutine.create(function() myTasks() end)
+to allow <code>vr_yield</code> to function, it should be enclosed in:</p><p><div id="frag_0Ww88Mp8wWKd"><ul class="nav nav-pills"><li class="active"><a href="#Lua0Ww88Mp8wWKd">Lua</a></li></ul><div class="tab-content"><div id="Lua0Ww88Mp8wWKd" class="tab-pane active"><pre><code>lu_co = coroutine.create(function() myTasks() end)
 vr_resume()
 </code></pre></div>
 </div></div>
-Alternatively, if the function is simple enough, it need not be separate:</p><p><div id="frag_wMWbkBxcNDMd"><ul class="nav nav-pills"><li class="active"><a href="#LuawMWbkBxcNDMd">Lua</a></li></ul><div class="tab-content"><div id="LuawMWbkBxcNDMd" class="tab-pane active"><pre><code>local function myTasks()
+Alternatively, if the function is simple enough, it need not be separate:</p><p><div id="frag_U7e0MXBVhC1r"><ul class="nav nav-pills"><li class="active"><a href="#LuaU7e0MXBVhC1r">Lua</a></li></ul><div class="tab-content"><div id="LuaU7e0MXBVhC1r" class="tab-pane active"><pre><code>local function myTasks()
   lu_co = coroutine.create(function()
     vrBodyFlyTo(node, 1.0)
     vr_yield(1.0)
@@ -134,7 +134,7 @@ Alternatively, if the function is simple enough, it need not be separate:</p><p>
 end
 </code></pre></div>
 </div></div>
-You could even write another helper function:</p><p><div id="frag_LStMgCNqfEbF"><ul class="nav nav-pills"><li class="active"><a href="#LuaLStMgCNqfEbF">Lua</a></li></ul><div class="tab-content"><div id="LuaLStMgCNqfEbF" class="tab-pane active"><pre><code>local function co_wrap(func)
+You could even write another helper function:</p><p><div id="frag_DW0kgmV2SjC6"><ul class="nav nav-pills"><li class="active"><a href="#LuaDW0kgmV2SjC6">Lua</a></li></ul><div class="tab-content"><div id="LuaDW0kgmV2SjC6" class="tab-pane active"><pre><code>local function co_wrap(func)
   lu_co = coroutine.create(function() func() end)
   vr_resume()
 end
