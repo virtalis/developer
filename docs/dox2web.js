@@ -720,9 +720,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga01e61cb2083ff299559ac7c7b7940e79'
     },
     {
+      name: 'vrAddPropertyArrayFloat',
+      brief: 'Adds a new float array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga0214b65c471d48e639d383c7132ac1d1'
+    },
+    {
       name: 'vrSettingWrite',
       brief: 'Writes the value of a setting',
     ref: 'group__api__lua.html#1ga023b65361133210fd1ac2a484443428f'
+    },
+    {
+      name: 'vrAddPropertyBool',
+      brief: 'Adds a new boolean property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga030a19ff32f636ee842bd5e1ae0c7ea7'
     },
     {
       name: 'vrNodeGetLocalTransform',
@@ -745,11 +755,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga05adff7fced2c6cf29f93e65aa7b34c1'
     },
     {
-      name: 'vrCopyValues',
-      brief: 'Copies the property values from one node to another of the same MetaNode type',
-    ref: 'group__api__lua.html#1ga05e995356c5e23268e3f2a3ddfa6bba7'
-    },
-    {
       name: 'vrAddTransformNodeObserver',
       brief: 'Add an observer to the SGNode of a vrtree node',
     ref: 'group__api__lua.html#1ga061aeb16753fc5b79154093179c8b83f'
@@ -758,11 +763,6 @@ $(document).ready(function() {
       name: 'vrScriptEditorSelectWord',
       brief: 'Selects the word surrounding the current insertion point in the currently visible script editor tab',
     ref: 'group__api__lua.html#1ga06cf3887cdd8f4a9e09a30678641fbcf'
-    },
-    {
-      name: 'vrNodeArrayGetSize',
-      brief: 'Gets the size of an array property',
-    ref: 'group__api__lua.html#1ga06ff7551aa0476dc745fbd8724b2be7b'
     },
     {
       name: 'vrLoadGalleryFolders',
@@ -800,14 +800,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga09a3ec8c2fdeff864df1196a38c8910a'
     },
     {
-      name: 'vrGetVisRenVersion',
-      brief: 'Returns the revision number of Visionary Render being used',
-    ref: 'group__api__lua.html#1ga0b92d5becbf80c8f78d6b34d75fa9f9c'
+      name: 'vrAddPropertyVec3d',
+      brief: 'Adds a new vec3d property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga0a724115ab39284635d285bb94eb9d24'
     },
     {
       name: 'vrScriptEditorSetCurrentLine',
       brief: 'Set the cursor at the start of the specified line in the currently visible script editor tab',
     ref: 'group__api__lua.html#1ga0d9f5cb5083bc75309e6c305e4ac2585'
+    },
+    {
+      name: 'vrGrabObjectWithTrackedHand',
+      brief: 'Attaches a target node to the hand',
+    ref: 'group__api__lua.html#1ga0e7e7fcd9b4da6371c02e199519a27ba'
     },
     {
       name: 'vrGetTrackedEyeNode',
@@ -818,6 +823,11 @@ $(document).ready(function() {
       name: 'vrProgressYield',
       brief: 'Updates the progress display',
     ref: 'group__api__lua.html#1ga10d407de2a3ed1449e79db9f9593eb80'
+    },
+    {
+      name: 'vrAddPropertyVectorBool',
+      brief: 'Adds a new boolean vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga10f8bc93a8ce02ae7fe3cdc7207e4335'
     },
     {
       name: 'vrSetAppQuitHook',
@@ -865,6 +875,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga15ab32c9acb0df5c2c07faef305b461c'
     },
     {
+      name: 'vrAddPropertyVec4f',
+      brief: 'Adds a new vec4f property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga15cad561aed6063966864b09140f0054'
+    },
+    {
       name: 'vrNodeDecomposeTransform',
       brief: 'Decomposes the nodes world transform property into seperate postion, rotation and scale tables / vectors',
     ref: 'group__api__lua.html#1ga1655eecc57c635645230ad58bc3c0332'
@@ -895,9 +910,9 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga1942aa3703617ffcf64f469c239bebc4'
     },
     {
-      name: 'vrShowGradientWindow',
-      brief: 'Pops up the application gradient editor for the specified gradient node',
-    ref: 'group__api__lua.html#1ga195c51adbe3beb2b2934c4bbc4cb7354'
+      name: 'vrAddPropertyVec2f',
+      brief: 'Adds a new vec2f property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga19a5ee968e19614f222b0b636ab1a641'
     },
     {
       name: 'vrNodeSetLocalPositionY',
@@ -955,6 +970,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga23212b3c657ef8ccf70db6790049cf48'
     },
     {
+      name: 'vrAddPropertyVec2w',
+      brief: 'Adds a new vec2w property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga24f2c4a0eb7120bdd950b877fb732e03'
+    },
+    {
       name: 'vrAppCommandBind',
       brief: 'Binds a lua function to an app command',
     ref: 'group__api__lua.html#1ga24f45bf1928c2bb36a616d0944a76924'
@@ -1005,6 +1025,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga29a2cff6f3f791f30be56c0e29823b20'
     },
     {
+      name: 'vrGetGradientColourAt',
+      brief: 'Gets the gradient colour ',
+    ref: 'group__api__lua.html#1ga2a48b29270cd62572c40ddb10f4b8f9f'
+    },
+    {
       name: 'vrSetSelectedTreeFrame',
       brief: 'Sets the currently selected tree view frame by name',
     ref: 'group__api__lua.html#1ga2a90884e503727170afcdaab18365149'
@@ -1028,6 +1053,11 @@ $(document).ready(function() {
       name: 'vrScriptEditorClearOutput',
       brief: 'Clears the script editor output',
     ref: 'group__api__lua.html#1ga2c20c94f5d3cc3f1d68f8b4a9ccc732f'
+    },
+    {
+      name: 'vrGetVisRenVersion',
+      brief: 'Returns the version number of Visionary Render being used',
+    ref: 'group__api__lua.html#1ga2c4de7bb9a2c1279388681133d2ad486'
     },
     {
       name: 'vrNodeSetParent',
@@ -1070,11 +1100,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga3114d11e25ae446765d87ddc15459612'
     },
     {
-      name: 'vrShowInTreeViewFrame',
-      brief: 'DEPRECATED - use vrSelectNodes',
-    ref: 'group__api__lua.html#1ga31e318acea90aa01b6edf7c7d4f53eb4'
-    },
-    {
       name: 'vrUpdateMenu',
       brief: 'Create menu item frames for children of the menu node',
     ref: 'group__api__lua.html#1ga3209c603a583fd7b7b9257aec6adddfb'
@@ -1093,6 +1118,11 @@ $(document).ready(function() {
       name: 'vrAddPropertyObserver',
       brief: 'Adds an observer of events from a property',
     ref: 'group__api__lua.html#1ga327729644c6e46fa13273c9ff1515e79'
+    },
+    {
+      name: 'vrAddPropertyVec4i',
+      brief: 'Adds a new vec4i property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga32d28eaee026e5e2da6ead4a2b35f313'
     },
     {
       name: 'vrClusterPopupToolsWindow',
@@ -1125,9 +1155,9 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga354f1f12975a71d6e2d4ae47fb527936'
     },
     {
-      name: 'vrGetBody',
-      brief: 'Gets the offset from the body to the user\'s standing position',
-    ref: 'group__api__lua.html#1ga35a3a117eb45d2dcb0ae4bc7bdd9a922'
+      name: 'vrAddPropertyVec4w',
+      brief: 'Adds a new vec4w property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga356f15d00c859c4d20971cfc1b348828'
     },
     {
       name: 'vrIsClustered',
@@ -1138,6 +1168,11 @@ $(document).ready(function() {
       name: 'vrScriptEditorSelectAll',
       brief: 'Selects all the text in the currently visible script editor tab',
     ref: 'group__api__lua.html#1ga36eb86125aa6cda5f6f712230f263874'
+    },
+    {
+      name: 'vrAddPropertyChar',
+      brief: 'Adds a new character property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga37bb2deb498a091e666c8a956bf5d188'
     },
     {
       name: 'vrCloseNotebookPane',
@@ -1178,6 +1213,11 @@ $(document).ready(function() {
       name: 'vrNodeSetRelativeTransform',
       brief: 'Sets the position, rotation and scale of the world transform of a node relative to another',
     ref: 'group__api__lua.html#1ga3da601a33054f2e9259297f54e63f35d'
+    },
+    {
+      name: 'vrGetBody',
+      brief: 'Gets the body currently controlling the user\'s view',
+    ref: 'group__api__lua.html#1ga3e088c85728f6248d6f1e5993baa1f77'
     },
     {
       name: 'vrBodyFlyToFit',
@@ -1240,9 +1280,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga4215255397a61e857a4a76f157016367'
     },
     {
+      name: 'vrAddPropertyArrayDouble',
+      brief: 'Adds a new double array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga42305f35c2f002a60abbd10f9b3ad26e'
+    },
+    {
       name: 'vrSetTransformLimits',
       brief: 'Adds transform limits onto a node',
     ref: 'group__api__lua.html#1ga42a4ebdc85555849cd273f1aa140821b'
+    },
+    {
+      name: 'vrPrimaryUserNode',
+      brief: 'Returns the cluster master\'s user node, or the local user node if unclustered',
+    ref: 'group__api__lua.html#1ga42d82258751d5e4f779b999ff63544cc'
     },
     {
       name: 'vrNodeGetPreviousSibling',
@@ -1365,6 +1415,16 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga4c460994483e47f30021690ad83b26d0'
     },
     {
+      name: 'vrNodeArrayPush',
+      brief: 'Pushes a new value to the end of an array property',
+    ref: 'group__api__lua.html#1ga4cf2655302afe7fb2f42aff53787ba3e'
+    },
+    {
+      name: 'vrAddPropertyString',
+      brief: 'Adds a new string property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga4cfee3bb98449d2768eec0086acd8367'
+    },
+    {
       name: 'vrAnnotationSetDefaultViewpoint',
       brief: 'Sets the default viewpoint for an annotation',
     ref: 'group__api__lua.html#1ga4d159f13e290609b10bdeef7566ab16a'
@@ -1420,9 +1480,24 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga51784c665a243e3284207a8105e2fccd'
     },
     {
+      name: 'vrCreateShapeData',
+      brief: 'Creates vertex and index nodes of a shape and adds them to the Mesh node passed in',
+    ref: 'group__api__lua.html#1ga519c8e1cfca9ec4b5d58b5e8ef2b525b'
+    },
+    {
+      name: 'vrAddPropertyVectorString',
+      brief: 'Adds a new string vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga52358167bc2d0e5e92884fe1c6db5346'
+    },
+    {
       name: 'vrGetRecentImportFileList',
       brief: 'Returns the list of recent import files',
     ref: 'group__api__lua.html#1ga5244967fafc46948f05b042b26b6e94b'
+    },
+    {
+      name: 'vrNodeArrayClear',
+      brief: 'Clears an array property',
+    ref: 'group__api__lua.html#1ga526f4c5c3df276dcd0ee7ff568c1be35'
     },
     {
       name: 'vrNodeSetLocalRotationZ',
@@ -1438,6 +1513,11 @@ $(document).ready(function() {
       name: 'vrMakeCylinder',
       brief: 'Creates a cylinder shape',
     ref: 'group__api__lua.html#1ga53a51fc023e73f29090b7f4e159d59cc'
+    },
+    {
+      name: 'vrAddPropertyArrayWorldFloat',
+      brief: 'Adds a new world float array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga53aa51e14d3a2c0b7f71101a0eee5229'
     },
     {
       name: 'vrBodyFlyToFitSphere',
@@ -1505,6 +1585,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga59180d38e0ca7a162db8c4c60c834af1'
     },
     {
+      name: 'vrAddPropertyArrayBool',
+      brief: 'Adds a new boolean array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga5adf953746088fafc06e70e48b384244'
+    },
+    {
       name: 'vrNodeSetLocalTransform',
       brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1ga5b48555a2275fc6cd24b754f84cc3be5'
@@ -1568,11 +1653,6 @@ $(document).ready(function() {
       name: 'vrGetCursorPosition',
       brief: 'Get the mouse cursor\'s current position',
     ref: 'group__api__lua.html#1ga608c770dcb1e1d23765e83a1eb9298f6'
-    },
-    {
-      name: 'vrNodeArraySetElement',
-      brief: 'Sets the value of an element of an array property',
-    ref: 'group__api__lua.html#1ga6184391642a7527cb79a0e2830a3b9b5'
     },
     {
       name: 'vrScriptEditorGetCurrentLine',
@@ -1665,6 +1745,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga690b379966f66dd2b6fe3a1c89c57377'
     },
     {
+      name: 'vrNodeArrayGetElement',
+      brief: 'Gets the value of an element of an array property',
+    ref: 'group__api__lua.html#1ga691a487955a3f7d4ea81682e50b27345'
+    },
+    {
       name: 'vrShowSettingsWindow',
       brief: 'Pops up the application settings for the specified settings group',
     ref: 'group__api__lua.html#1ga6a2814344517c8f629a92e0e74576520'
@@ -1673,11 +1758,6 @@ $(document).ready(function() {
       name: 'vrClusterShowPropertyWindow',
       brief: 'DEPRECATED - use vrShowPropertyWindow',
     ref: 'group__api__lua.html#1ga6afb85df1bc64eef2dc3038c153cd697'
-    },
-    {
-      name: 'vrNodeArrayPush',
-      brief: 'Pushes a new value to the end of an array property',
-    ref: 'group__api__lua.html#1ga6b142a435f9d046107276fc76d17a598'
     },
     {
       name: 'vrApplyForce',
@@ -1715,9 +1795,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga6dca3009ea0931b274191a09601c4e74'
     },
     {
+      name: 'vrShowGradientWindow',
+      brief: 'Pops up the application gradient editor for the specified gradient node',
+    ref: 'group__api__lua.html#1ga6df08932a8f38cf29b59a6ce20ab9a3f'
+    },
+    {
       name: 'vrNodeGetLocalPositionX',
       brief: 'Gets the local x position of the node',
     ref: 'group__api__lua.html#1ga6f1c59d70f2b7cd343cbae6b3f06fb2d'
+    },
+    {
+      name: 'vrAddPropertyVec4d',
+      brief: 'Adds a new vec4d property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga6f4b1f9a6d5b5249476c73c98d8555bb'
     },
     {
       name: 'vrAngleRadians',
@@ -1755,6 +1845,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga72d250b931c2613c4d13fdf775dc6227'
     },
     {
+      name: 'vrNodeArraySetElement',
+      brief: 'Sets the value of one or more existing element of an array property',
+    ref: 'group__api__lua.html#1ga730c9f2ca860792eea1a1080cea5a7a8'
+    },
+    {
       name: 'vrGetLastViewSelectionGroup',
       brief: 'Returns the selection group that was added to',
     ref: 'group__api__lua.html#1ga7454c63660e81da65e7e0c7c313cd32f'
@@ -1788,6 +1883,11 @@ $(document).ready(function() {
       name: 'vrListSleepingScripts',
       brief: 'Lists the scripts currently suspended, awaiting resume',
     ref: 'group__api__lua.html#1ga768bd66e691b4bfd80c6b3a0dc9936ba'
+    },
+    {
+      name: 'vrAddPropertyVectorChar',
+      brief: 'Adds a new character vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga771cc57e28f63195dcb8b79938a575ae'
     },
     {
       name: 'vrRequestSaveFile',
@@ -1885,6 +1985,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7d75051afeb1781ce83861b995effcc4'
     },
     {
+      name: 'vrShowInTreeViewFrame',
+      brief: 'DEPRECATED - use vrSelectNodes',
+    ref: 'group__api__lua.html#1ga7d9ba6ed672d6410e1c406fd614551ba'
+    },
+    {
       name: 'vrShowPropertyWindow',
       brief: 'Pops up the application property editor for the specified view selection',
     ref: 'group__api__lua.html#1ga7da90a315b5f78e55df0279a011ca43f'
@@ -1931,7 +2036,7 @@ $(document).ready(function() {
     },
     {
       name: 'vrGetHoldingUser',
-      brief: 'Finds the user who is holding the specified node with a tracked controller receives a single user local user1, user2 = vrGetHoldingUser receives up to two users local users = { vrGetHoldingUser receives all users in a table',
+      brief: 'Return the user that is holding the node',
     ref: 'group__api__lua.html#1ga81b1ff4cba8ad518bae17a6aff35f45b'
     },
     {
@@ -1953,11 +2058,6 @@ $(document).ready(function() {
       name: 'vrPlaneFromMatrix',
       brief: 'Returns a plane created from a matrix',
     ref: 'group__api__lua.html#1ga8314d63a513fadd9ed8e13db25e3c4bd'
-    },
-    {
-      name: 'vrNodeArraySetSize',
-      brief: 'Sets the size of an array property',
-    ref: 'group__api__lua.html#1ga83909d23daeedb86b9a8a443e20babf7'
     },
     {
       name: 'vrIsToolEnabled',
@@ -2010,11 +2110,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga8875d36b708a868a2af338d2c04cbb17'
     },
     {
-      name: 'vrGrabObjectWithTrackedHand',
-      brief: 'Attaches a target node to the hand',
-    ref: 'group__api__lua.html#1ga887de7d93fe98ebc9efe29e98faa1cd6'
-    },
-    {
       name: 'vrRequestFolder',
       brief: 'Invokes a dialog to select a folder',
     ref: 'group__api__lua.html#1ga8881f7060cdd277922d667e2da640193'
@@ -2065,6 +2160,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga8cce734c868cd507d927f549e8aa88c1'
     },
     {
+      name: 'vrAddPropertyVec3f',
+      brief: 'Adds a new vec3f property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga8ceb78a6b668e06aad9f51ecdf12c1fb'
+    },
+    {
       name: 'vrMatRotateEulerZ',
       brief: 'Return M rotated on the Z axis by angle V',
     ref: 'group__api__lua.html#1ga8d9024f8e29c610fec05fc0dd496c74e'
@@ -2078,6 +2178,11 @@ $(document).ready(function() {
       name: 'vrShowAnnotationReviewWindow',
       brief: 'Pops up the applicaiton annotation review window for the specified annotation node',
     ref: 'group__api__lua.html#1ga8db056f25bfd7dfca9f9ada259810979'
+    },
+    {
+      name: 'vrAddPropertyDouble',
+      brief: 'Adds a new double property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga8dee40c727bd753678af0134d77a644e'
     },
     {
       name: 'vrActivate',
@@ -2135,6 +2240,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga90afe04f38d47bd2e3f0c68f848208fc'
     },
     {
+      name: 'vrAddPropertyMat3f',
+      brief: 'Adds a new mat3f property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga91396eb00d810e292d5967b72172b012'
+    },
+    {
       name: 'vrCloseSequence',
       brief: 'Closes the specified sequence in the sequencer window',
     ref: 'group__api__lua.html#1ga9162f67ca09a2731a3670125a0f0beb8'
@@ -2180,6 +2290,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga94f11f3c275b592ada48f80a188d422b'
     },
     {
+      name: 'vrFinishMetaNode',
+      brief: 'Finishes a metanode ',
+    ref: 'group__api__lua.html#1ga95213827322aa390be46b059d0f9c462'
+    },
+    {
       name: 'vrQuaternionSlerp',
       brief: 'Returns the spherical interpolation between two quaternions',
     ref: 'group__api__lua.html#1ga952d78315f15a1290df725a02b547069'
@@ -2205,9 +2320,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga97203648eafbf7ada396705fd0cd4872'
     },
     {
+      name: 'vrAddPropertyVectorDouble',
+      brief: 'Adds a new double vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga97c535cfb6b53e2a6aa6b785a82702c9'
+    },
+    {
       name: 'vrNodeSetRotationZ',
       brief: 'Sets the world z rotation of the node',
     ref: 'group__api__lua.html#1ga97d7caf199e0fcd9abf61569f28cf167'
+    },
+    {
+      name: 'vrGetUserOffset',
+      brief: 'Gets the offset from the body to the user\'s standing position',
+    ref: 'group__api__lua.html#1ga9891ad82e91741c0e6852478d9947062'
     },
     {
       name: 'vrNodeGetNoSave',
@@ -2218,6 +2343,11 @@ $(document).ready(function() {
       name: 'vrShowInTree',
       brief: 'DEPRECATED - use vrSelectNodes',
     ref: 'group__api__lua.html#1ga99abf1b9cc73e2267cc96bdfe86f0f79'
+    },
+    {
+      name: 'vrAddPropertyVec2i',
+      brief: 'Adds a new vec2i property to an unfinished metanode',
+    ref: 'group__api__lua.html#1ga9a93a6148709737d37d18ed19904e96f'
     },
     {
       name: 'vrHistoryStepBack',
@@ -2258,6 +2388,11 @@ $(document).ready(function() {
       name: 'vrNodeSetScaleY',
       brief: 'Sets the world y scale of the node',
     ref: 'group__api__lua.html#1ga9d86fd990e3af99468891610be8848a8'
+    },
+    {
+      name: 'vrGetVisRenRevision',
+      brief: 'Returns the revision number of Visionary Render being used',
+    ref: 'group__api__lua.html#1ga9d90a25f52f8179f523a2e19c942c4cd'
     },
     {
       name: 'vrUserPluginsDir',
@@ -2340,14 +2475,34 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gaa2c30f76bb12acf9efb326c0712f9150'
     },
     {
+      name: 'vrAddPropertyMat4d',
+      brief: 'Adds a new mat4d property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gaa2c44662b3503acecd9f4115891e34d9'
+    },
+    {
       name: 'vrMatTranslate',
       brief: 'Return M translated by the vector V',
     ref: 'group__api__lua.html#1gaa3dfa79874fab47315dd89d213908f10'
     },
     {
+      name: 'vrAddPropertyArrayInt',
+      brief: 'Adds a new integer array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gaa3e376c2c32e2f5530154d38de77ff40'
+    },
+    {
       name: 'vrNodeGetMetaNode',
       brief: 'Gets the name of the MetaNode that a node is an instance of',
     ref: 'group__api__lua.html#1gaa45ca306f6867db84ee2402da5541b59'
+    },
+    {
+      name: 'vrAddPropertyMat4w',
+      brief: 'Adds a new mat4w property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gaa48065a87443439fb366e6de9e8b822c'
+    },
+    {
+      name: 'vrNodeArrayPop',
+      brief: 'Pops a value from the end of an array property',
+    ref: 'group__api__lua.html#1gaa4cdb88dffe1649639afc771a89226f1'
     },
     {
       name: 'vrNodeCopyValue',
@@ -2450,11 +2605,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gaae648dfe2f7304f9de3aef817ef162d2'
     },
     {
-      name: 'vrNodeArrayGetElement',
-      brief: 'Gets the value of an element of an array property',
-    ref: 'group__api__lua.html#1gaae9b368044ba2b119290d4fb18e3010d'
-    },
-    {
       name: 'vrNodeSetPosition',
       brief: 'Sets the world position of the node',
     ref: 'group__api__lua.html#1gaaf657b5ebe1f2b501afa46eeb145f71a'
@@ -2505,6 +2655,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gab30cb3865beb9e559f0523a7a98dfefc'
     },
     {
+      name: 'vrAddPropertyMat3w',
+      brief: 'Adds a new mat3w property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gab36800d03d23b5d7bcd545f12753e080'
+    },
+    {
       name: 'vrSetIconToTexture',
       brief: 'Sets the browser icon for a node to a texture',
     ref: 'group__api__lua.html#1gab3c12256acdcab8d6375ee78cf8debd7'
@@ -2518,11 +2673,6 @@ $(document).ready(function() {
       name: 'vrTreeSelect',
       brief: 'Selects the specified node in the specified view ',
     ref: 'group__api__lua.html#1gab5863d793b8bad2c3cc2cf646d31f7f1'
-    },
-    {
-      name: 'vrClusterMasterNode',
-      brief: 'Returns the cluster master\'s user node, or the local user node if unclustered',
-    ref: 'group__api__lua.html#1gab5bc368d37f78fc257cf260e2a5c484e'
     },
     {
       name: 'vrNodeGetLocalPositionY',
@@ -2543,6 +2693,11 @@ $(document).ready(function() {
       name: 'vrMatScale',
       brief: 'Return M scaled by vector V',
     ref: 'group__api__lua.html#1gab619b99543a34eee23a8551e26abadc6'
+    },
+    {
+      name: 'vrNodeArraySetSize',
+      brief: 'Sets the size of an array property',
+    ref: 'group__api__lua.html#1gab62f24548077657f8658e18a7173dfcf'
     },
     {
       name: 'vrMakeEllipsoid',
@@ -2615,11 +2770,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gabb6674392ccf5cc0263b5292d41bf777'
     },
     {
-      name: 'vrReleaseObjectFromTrackedHand',
-      brief: 'Releases a node attached to the hand',
-    ref: 'group__api__lua.html#1gabb9c1aba4906aae12bbd04cd51fd1323'
-    },
-    {
       name: 'vrScriptEditorGetInsertPos',
       brief: 'Gets the text insert cursor position in the currently visible script editor tab',
     ref: 'group__api__lua.html#1gabb9d66d9dcffeda71b6848b94027c9c8'
@@ -2638,6 +2788,11 @@ $(document).ready(function() {
       name: 'vrAnnotationDelete',
       brief: 'Delete an annotation and all associated comments and viewpoints',
     ref: 'group__api__lua.html#1gabd89dc73851605d8849e429bab8fc9b7'
+    },
+    {
+      name: 'vrAddPropertyVectorWorldFloat',
+      brief: 'Adds a new world float vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gabdd264dc1bec9c2a92b4e2284592741d'
     },
     {
       name: 'vrToggleGUIEnabled',
@@ -2660,11 +2815,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gabf13679b5df37456914166f8e48af445'
     },
     {
-      name: 'getGradientColourAt',
-      brief: 'Gets the gradient colour ',
-    ref: 'group__api__lua.html#1gabf1367bff5b8f00a722e3f033390ed6f'
-    },
-    {
       name: 'vrHSV2RGB',
       brief: 'Converts a HSV coiour ',
     ref: 'group__api__lua.html#1gabf1fad5725e84e60c2e2f39ff169a6dc'
@@ -2680,6 +2830,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gabfa43eb5d121f9e1866e09f451ed3563'
     },
     {
+      name: 'vrGroupHasNodeOfType',
+      brief: 'Checks whether a group contains a node of a specified type',
+    ref: 'group__api__lua.html#1gac017abed7e3d5d5f2136373b64b44a0b'
+    },
+    {
       name: 'vrScriptEditorSetMarkPos',
       brief: 'Sets the text mark cursor position in the currently visible script editor tab',
     ref: 'group__api__lua.html#1gac0f223ce4eb9bee89ad9aaef5094ae84'
@@ -2688,6 +2843,11 @@ $(document).ready(function() {
       name: 'vrNodeGetRelativePath',
       brief: 'Gets the encoded path to a node, relative to another node',
     ref: 'group__api__lua.html#1gac0fdc5c1d108e8cd90368a46440585ac'
+    },
+    {
+      name: 'vrAddPropertyInt',
+      brief: 'Adds a new integer property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gac13b313af12fb67353692801ad7119f9'
     },
     {
       name: 'vrNodeSetLocal',
@@ -2733,6 +2893,11 @@ $(document).ready(function() {
       name: 'vrProgressEnd',
       brief: 'Ends the progress display',
     ref: 'group__api__lua.html#1gac6a7754a919799cf8e98fa75d1187358'
+    },
+    {
+      name: 'vrAddPropertyArrayChar',
+      brief: 'Adds a new character array property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gac6c2fe80323aea7b1a5148dbbd959b60'
     },
     {
       name: 'vrMatOrthoNormalise',
@@ -2795,6 +2960,16 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gacbf7392878ae70ae01c0f8cc4cd8bffc'
     },
     {
+      name: 'vrReleaseObjectFromTrackedHand',
+      brief: 'Releases a node attached to the hand',
+    ref: 'group__api__lua.html#1gacc25a7074335b6fb811fa082c7a1e0c5'
+    },
+    {
+      name: 'vrAddPropertyMat3d',
+      brief: 'Adds a new mat3d property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gacc3f33084aad0c6c73b74b12107993aa'
+    },
+    {
       name: 'vrAABoxPosAndSize',
       brief: 'Construct an axis aligned bounding box, using a position and a size',
     ref: 'group__api__lua.html#1gacc6064a18deccef90bad3d262adab519'
@@ -2830,9 +3005,24 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gace32b7aa755ac46bf6195bf99be33124'
     },
     {
+      name: 'vrClusterShowInTreeViewFrame',
+      brief: 'DEPRECATED - use vrSelectNodes',
+    ref: 'group__api__lua.html#1gace674e49d6d09cbc1ee072e06ed2be7f'
+    },
+    {
+      name: 'vrAddPropertyMat4f',
+      brief: 'Adds a new mat4f property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gace87e4db6a65e4db07b429c3f4d77489'
+    },
+    {
       name: 'vrAnnotationDeleteViewpoint',
       brief: 'Delete a viewpoint from an annotation',
     ref: 'group__api__lua.html#1gace9db188490b5c18932aec2840c31adf'
+    },
+    {
+      name: 'vrAddPropertyLink',
+      brief: 'Adds a new link property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gacfb4816ce8ad9addfac087386221ba40'
     },
     {
       name: 'vrTreeControlRangeSelect',
@@ -2875,6 +3065,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gad4edbb98504cb40ea1a1916613c0459f'
     },
     {
+      name: 'vrAddPropertyVectorFloat',
+      brief: 'Adds a new float vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gad4f8d7fc4af7a9bdee9247f8ac02382f'
+    },
+    {
       name: 'vrTreeViewSelectionSelectInvert',
       brief: 'Inverts selection',
     ref: 'group__api__lua.html#1gad693fd9a227b3377b453a0a05e1cd820'
@@ -2883,6 +3078,11 @@ $(document).ready(function() {
       name: 'vrGetImporterList',
       brief: 'Gets the names of all installed data importer plugins',
     ref: 'group__api__lua.html#1gad710ac06ad0818ddd80c49e0cf27e102'
+    },
+    {
+      name: 'vrAddPropertyVec3w',
+      brief: 'Adds a new vec3w property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gad7a307d2a70161f2ee970a36c0a34bb8'
     },
     {
       name: 'vrAnnotationDeleteComment',
@@ -2898,6 +3098,11 @@ $(document).ready(function() {
       name: 'vrTreeViewSelectionCollapse',
       brief: 'Collapses the current selection',
     ref: 'group__api__lua.html#1gad8a531e9e607460269528cec0062171c'
+    },
+    {
+      name: 'vrAddPropertyVectorInt',
+      brief: 'Adds a new integer vector property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gad8cfc256cdc2a03cd1dfc3cecd7177a2'
     },
     {
       name: 'vrAnnotationListAll',
@@ -2938,6 +3143,16 @@ $(document).ready(function() {
       name: 'vrNodeGetLocallyModified',
       brief: 'Queries whether or not this node\'s last modification was made by the local visionary render instance',
     ref: 'group__api__lua.html#1gadbc36c7384c6421f0afbdb786da99a2c'
+    },
+    {
+      name: 'vrNodeArraySet',
+      brief: 'Sets the values of an array property to a new array',
+    ref: 'group__api__lua.html#1gadc44174dc266d68e6115aa8f60a143ef'
+    },
+    {
+      name: 'vrPlaneRayIntersect',
+      brief: 'Returns how far along the ray an intersection point with this plane is',
+    ref: 'group__api__lua.html#1gadcf4c5252ce2e2bf939e202c1bb647ff'
     },
     {
       name: 'vrRescalePRSManipulator',
@@ -3025,9 +3240,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gae194ce4e4f8280d99bc07a54412e408a'
     },
     {
+      name: 'vrAddPropertyVec3i',
+      brief: 'Adds a new vec3i property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gae1b53c78afb81acebbf3ecc6a10a1ade'
+    },
+    {
       name: 'vrListExports',
       brief: 'List all Lua VR extension functions',
     ref: 'group__api__lua.html#1gae2149ae45d9f396ad117f1d82cde7e8d'
+    },
+    {
+      name: 'vrAddPropertyWorldFloat',
+      brief: 'Adds a new world float property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gae2ef22093117e9522dbe500cb4bd253d'
     },
     {
       name: 'vrBodyAddImpulse',
@@ -3115,11 +3340,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gae8df2570814c85cd9be190d357cae67f'
     },
     {
-      name: 'vrRayIntersect',
-      brief: 'Returns how far along the ray an intersection point with this plane is',
-    ref: 'group__api__lua.html#1gae8f7609492add02de9d87e615075f1ef'
-    },
-    {
       name: 'vrShouldShowPropertyWindow',
       brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1gae9035f7aecf7de65e636c6e23f85bfbf'
@@ -3130,9 +3350,9 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gae99d59a3d20f43f3c4fb9ba2c5e0819c'
     },
     {
-      name: 'vrNodeArraySet',
-      brief: 'Sets the values of an array property to a new array',
-    ref: 'group__api__lua.html#1gae9c3dc5d8b4c06dffb2dc25d8c2079d4'
+      name: 'vrAddPropertyFloat',
+      brief: 'Adds a new float property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gae9dbef6f2a5bf7fb8b7698240e510d7f'
     },
     {
       name: 'vrNodeSetWorldTransform',
@@ -3158,6 +3378,16 @@ $(document).ready(function() {
       name: 'vrNodeGetAncestor',
       brief: 'Gets the first ancestor of the specified type',
     ref: 'group__api__lua.html#1gaeb2963c680970a13e1d00f3f5f8014b7'
+    },
+    {
+      name: 'vrNodeArrayGetSize',
+      brief: 'Gets the size of an array property',
+    ref: 'group__api__lua.html#1gaecced17566563dea33afdee1e6fed48a'
+    },
+    {
+      name: 'vrAddPropertyVec2d',
+      brief: 'Adds a new vec2d property to an unfinished metanode',
+    ref: 'group__api__lua.html#1gaed2f322ae5bdef4bf1dc00ea191dcc0b'
     },
     {
       name: 'vrYield',
@@ -3200,11 +3430,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gaf2322c9e308cda3df1aa058db738b337'
     },
     {
-      name: 'vrNodeArrayPop',
-      brief: 'Pops a value from the end of an array property',
-    ref: 'group__api__lua.html#1gaf26411803a9f8800e735de4fbd8e246d'
-    },
-    {
       name: 'vrGetRecentFileList',
       brief: 'Returns the list of recent files',
     ref: 'group__api__lua.html#1gaf2cb54aa1aba919abfadac9e8124644f'
@@ -3218,6 +3443,11 @@ $(document).ready(function() {
       name: 'vrNodeGetScale',
       brief: 'Gets the world scale of the node',
     ref: 'group__api__lua.html#1gaf40fb6760142ca13bae0869f3d92146b'
+    },
+    {
+      name: 'vrCreateMetaNode',
+      brief: 'Creates a new metanode',
+    ref: 'group__api__lua.html#1gaf420fa0a83f0faa221e1307ddef8075f'
     },
     {
       name: 'vrQuaternion',
@@ -3248,6 +3478,11 @@ $(document).ready(function() {
       name: 'vrScriptEditorDeleteSelection',
       brief: 'Deletes the selected text from the currently visible script editor tab',
     ref: 'group__api__lua.html#1gaf974d543fb802d9d9d07a6dbb9801037'
+    },
+    {
+      name: 'vrCopyNodeValues',
+      brief: 'Copies the property values from one node to another of the same MetaNode type',
+    ref: 'group__api__lua.html#1gafa65bef97bfbfd9bb201002d7170d8e0'
     },
     {
       name: 'vrNodeGetName',
@@ -3388,6 +3623,11 @@ $(document).ready(function() {
       name: 'VRAddPropertyLinkFilter',
       brief: 'Adds a link property to a metanode with a filter on allowed types',
     ref: 'group__api__metanodes__properties.html#1ga0e6ca5a01a35f34563d512c8c587d2db'
+    },
+    {
+      name: 'VRAddPropertyVectorBool',
+      brief: 'Adds a boolean vector property to a metanode ',
+    ref: 'group__api__metanodes__properties.html#1ga1bc219ce6b74fbb718b543c6afcdaaa4'
     },
     {
       name: 'VRAddPropertyInt',
@@ -3703,6 +3943,11 @@ $(document).ready(function() {
       name: 'VRAddPropertyIntRange',
       brief: 'Adds an integer property to a metanode, with min/max range hints',
     ref: 'group__api__metanodes__properties.html#1gaf773146fa6af594c5487bced1a10a185'
+    },
+    {
+      name: 'VRAddPropertyVectorDouble',
+      brief: 'Adds a double vector property to a metanode ',
+    ref: 'group__api__metanodes__properties.html#1gaf8d648ae1621d4fd3b93c3142de2edcd'
     },
     {
       name: 'VRAddPropertyVec2i',
@@ -4700,6 +4945,11 @@ $(document).ready(function() {
     ref: 'group__api__proto.html#1ga8536dd988c51de0bf7530c402f3728c7'
     },
     {
+      name: 'SettingChangedFunc',
+      brief: 'Signature of a function that is called when a setting is changed',
+    ref: 'group__api__proto.html#1ga944e8b7a06ce9695b03772db333755e6'
+    },
+    {
       name: 'NodeChildAddedFunc',
       brief: 'Signature of a function that is called when a child is added to a node',
     ref: 'group__api__proto.html#1gaae33146d6dda20f3a027646e105e5e83'
@@ -4733,6 +4983,206 @@ $(document).ready(function() {
       name: 'MigrationFunc',
       brief: 'Signature of a function that is called at the end of a nodes migration calls',
     ref: 'group__api__proto.html#1gaf9fb2f851d4d5bd5bbdd7e85c7e73628'
+    },
+    {
+      name: 'VRGetSettingSize',
+      brief: 'Returns the number of bytes required to store a setting\'s value',
+    ref: 'group__api__settings.html#1ga0baa1cf88059bbc31ab8f3123c963a5a'
+    },
+    {
+      name: 'VRReadSettingBool',
+      brief: 'Reads a boolean setting',
+    ref: 'group__api__settings.html#1ga282dcc325f9a902f94d3e5ab42cf6643'
+    },
+    {
+      name: 'VRReadSettingDouble',
+      brief: 'Reads a double setting',
+    ref: 'group__api__settings.html#1ga2f3ae0a615091b8a0ae1037624db1f1e'
+    },
+    {
+      name: 'VRCreateSettingArrayDouble',
+      brief: 'Creates a double array setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga33fc4a9faeae275f0cc24edee75a3004'
+    },
+    {
+      name: 'VRReadSettingString',
+      brief: 'Reads a string setting',
+    ref: 'group__api__settings.html#1ga35f385ee391edfea8ff9218fb4afb158'
+    },
+    {
+      name: 'VRAddSettingToScene',
+      brief: 'Adds a scene override of a setting ',
+    ref: 'group__api__settings.html#1ga38b28cd62ea12485c3a4af82db8f39e9'
+    },
+    {
+      name: 'VRWriteSettingArrayDouble',
+      brief: 'Sets the value of a double array setting',
+    ref: 'group__api__settings.html#1ga3925e71021bf010993b354349e435647'
+    },
+    {
+      name: 'VRReadSettingArrayDouble',
+      brief: 'Reads a double array setting',
+    ref: 'group__api__settings.html#1ga401b9d992923267642bdf1dc7408cd7e'
+    },
+    {
+      name: 'VRCreateSettingDouble',
+      brief: 'Creates a double setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga403cf24be2dc59cc05bf073531335b66'
+    },
+    {
+      name: 'VRGetRootSettingNode',
+      brief: 'Gets the VRTree node associated with the root of the settings hierarchy',
+    ref: 'group__api__settings.html#1ga4349e2b793d813068530f7295e196b20'
+    },
+    {
+      name: 'VRCreateSettingArrayInt',
+      brief: 'Creates an integer array setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga49f7efffdc40a58e1452369bc9f7f6b4'
+    },
+    {
+      name: 'VRReadSettingFloat',
+      brief: 'Reads a float setting',
+    ref: 'group__api__settings.html#1ga53ab7cda212e452faf600549082846e6'
+    },
+    {
+      name: 'VRSetSettingFilter',
+      brief: 'Assigns a filter to a setting',
+    ref: 'group__api__settings.html#1ga63c87f73c8c5191b72d50a90a246da02'
+    },
+    {
+      name: 'VRWriteSettingDouble',
+      brief: 'Sets the value of a double setting',
+    ref: 'group__api__settings.html#1ga6436898aa32e36a5cab6e753ef307e49'
+    },
+    {
+      name: 'VRReadSettingInt',
+      brief: 'Reads an int setting',
+    ref: 'group__api__settings.html#1ga66297d5cafbb1f8943524dd2ed74af5e'
+    },
+    {
+      name: 'VRCreateSettingFloat',
+      brief: 'Creates a float setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga77559534facbf8803f4b4200aca77959'
+    },
+    {
+      name: 'VRWriteSettingArrayInt',
+      brief: 'Sets the value of an int array setting',
+    ref: 'group__api__settings.html#1ga77d06bfeb0721f571107e893053533e8'
+    },
+    {
+      name: 'VRCreateSettingLink',
+      brief: 'Creates a link setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga77f4aed5f2cc617fbe8ddbb497afe913'
+    },
+    {
+      name: 'VRCreateSettingInt',
+      brief: 'Creates an integer setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga7b3e769030f23465a02f5ea9b34d9d7b'
+    },
+    {
+      name: 'VRCreateSettingString',
+      brief: 'Creates a string setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga7c75c7087bda6c74932b137244d5f09f'
+    },
+    {
+      name: 'VRCreateSettingBool',
+      brief: 'Creates a boolean setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1ga831f1d64e0f2a70543c4c56e49aeb36d'
+    },
+    {
+      name: 'VRAddCallbackSettingChanged',
+      brief: 'Registers a function to be called when a setting value changes',
+    ref: 'group__api__settings.html#1ga8571066306cd9c291811cb1a71029eb8'
+    },
+    {
+      name: 'VRWriteSettingLink',
+      brief: 'Sets the value of a link setting',
+    ref: 'group__api__settings.html#1ga8c4cb653bcb2a82bba5f3075af383b54'
+    },
+    {
+      name: 'VRWriteSettingArrayFloat',
+      brief: 'Sets the value of a float array setting',
+    ref: 'group__api__settings.html#1ga97b935a2120c77ec86a35e3a5e964ec7'
+    },
+    {
+      name: 'VRReadSettingArrayFloat',
+      brief: 'Reads a float array setting',
+    ref: 'group__api__settings.html#1ga9a0d3f24c3b388ced1b2fa6094bb0af4'
+    },
+    {
+      name: 'VRSetSettingStep',
+      brief: 'Assigns a step size to a numeric setting',
+    ref: 'group__api__settings.html#1ga9b233f247fc69f015b8c866e342319de'
+    },
+    {
+      name: 'VRReadSettingArrayInt',
+      brief: 'Reads an int array setting',
+    ref: 'group__api__settings.html#1gaa60506cbf66810df30b2385b219afbb5'
+    },
+    {
+      name: 'VRWriteSettingFloat',
+      brief: 'Sets the value of a float setting',
+    ref: 'group__api__settings.html#1gaa6589c858cc2c5a189c0490bb0e2a806'
+    },
+    {
+      name: 'VRWriteSettingString',
+      brief: 'Sets the value of a string setting',
+    ref: 'group__api__settings.html#1gaaa5a6852d393088fec0bf64299374b90'
+    },
+    {
+      name: 'VRReadSettingLink',
+      brief: 'Reads a link setting',
+    ref: 'group__api__settings.html#1gaaa88e340e2203ecf0ee5ae2ba97edddc'
+    },
+    {
+      name: 'VRCreateSettingArrayFloat',
+      brief: 'Creates a float array setting if it doesn\'t already exist',
+    ref: 'group__api__settings.html#1gab2e15b943abfee6ccc44746473ac50f5'
+    },
+    {
+      name: 'VRSetSettingCaption',
+      brief: 'Assigns a custom caption to a setting, allowing the text displayed to in user interface to be different from the setting name',
+    ref: 'group__api__settings.html#1gab64dec6749d41a8530bf3670673753bf'
+    },
+    {
+      name: 'VRWriteSettingBool',
+      brief: 'Sets the value of a boolean setting',
+    ref: 'group__api__settings.html#1gac1eed85e776389ce65853d656267d8d0'
+    },
+    {
+      name: 'VRRemoveSettingFromScene',
+      brief: 'Removes a scene override of a setting',
+    ref: 'group__api__settings.html#1gad6f628d7bc89a23d31f54dc927385ced'
+    },
+    {
+      name: 'VRRemoveCallbackSettingChanged',
+      brief: 'Removes a callback that was added with VRAddCallbackSettingChanged',
+    ref: 'group__api__settings.html#1gad89b1ef876bcdf3a592b658d42729ec6'
+    },
+    {
+      name: 'VRGetSettingNode',
+      brief: 'Gets the VRTree node associated with a setting',
+    ref: 'group__api__settings.html#1gadad564530d97e8aea7a81e36c56c20bf'
+    },
+    {
+      name: 'VRGetSceneRootSettingNode',
+      brief: 'Gets the VRTree node associated with the root of the scene overrides, if present',
+    ref: 'group__api__settings.html#1gaef05fe97c40eacfe723f7fed3abc46b2'
+    },
+    {
+      name: 'VRWriteSettingInt',
+      brief: 'Sets the value of an int setting',
+    ref: 'group__api__settings.html#1gaf754ea969f38bf0766f69840126611cd'
+    },
+    {
+      name: 'VRSetSettingType',
+      brief: 'Assigns a type to a setting, which determines how the setting is presented in the user interface',
+    ref: 'group__api__settings.html#1gaf8c1bfd23560c40136dd848d8ed7c3d7'
+    },
+    {
+      name: 'VRSetSettingRange',
+      brief: 'Assigns a range to a numeric setting',
+    ref: 'group__api__settings.html#1gafb6258036f3c4efcccb1e3d99d233687'
     },
     {
       name: 'VRGetMetaNode',
@@ -6891,7 +7341,7 @@ $(document).ready(function() {
     },
     {
       name: 'max',
-      brief: 'Minimum in each axis of the box',
+      brief: 'Maximum in each axis of the box',
     ref: 'structvrbox.html#1af6143c24a4baec4f689fe0314d0d1813'
     },
     {
@@ -7450,11 +7900,6 @@ $(document).ready(function() {
     ref: 'structvrplane.html#1a251a411646b52e084d17b3bca2a5b641'
     },
     {
-      name: 'rayIntersect',
-      brief: '::vrPlaneRayIntersect ',
-    ref: 'structvrplane.html#1a39bb438796df4ecdcf04642d5a835ad4'
-    },
-    {
       name: 'transform',
       brief: 'vrPlaneTransform) Returns a plane transformed by a matrix',
     ref: 'structvrplane.html#1a495dee40f684a2b30f232d89a22da5b7'
@@ -7463,6 +7908,11 @@ $(document).ready(function() {
       name: 'normal',
       brief: 'Normal of the plane',
     ref: 'structvrplane.html#1a5107fbc8582c26c7ecaabd7328491372'
+    },
+    {
+      name: 'rayIntersect',
+      brief: 'vrPlaneRayIntersect) Returns how far along the ray an intersection point with this plane is',
+    ref: 'structvrplane.html#1a87b5adb2fedcca1f2ac1ded5d8ed9bc0'
     },
     {
       name: 'distance',
@@ -8396,7 +8846,7 @@ $(document).ready(function() {
     },
     {
       name: 'Using the Script Editor',
-      brief: 'The Script Editor is a simple text editor that permits you to write Lua scripts and GLSL codeWindows > Script EditorCtrl + L',
+      brief: 'This page gives an introduction to using the script editor',
       ref: 'applua_intro.html'
     },
     {
@@ -8406,7 +8856,7 @@ $(document).ready(function() {
     },
     {
       name: 'Best Practices',
-      brief: 'Local vs Global',
+      brief: 'This page documents some best practices when using the VRTree API',
       ref: 'best_practices.html'
     },
     {
@@ -8436,7 +8886,7 @@ $(document).ready(function() {
     },
     {
       name: 'Using the Script Event System',
-      brief: 'Visionary Render can automatically generate common scripts using EventsCreate > Event from the context menu',
+      brief: 'This page gives an introduction to the script event system and registers',
       ref: 'eventlua_intro.html'
     },
     {
@@ -8561,7 +9011,7 @@ $(document).ready(function() {
     },
     {
       name: 'Creating a Lua Plugin',
-      brief: 'Modules',
+      brief: 'This page gives an introduction to creating Lua plugins',
       ref: 'luaplugin_intro.html'
     },
     {
@@ -8596,12 +9046,12 @@ $(document).ready(function() {
     },
     {
       name: 'Creating a Native Plugin',
-      brief: 'Environment Setup',
+      brief: 'This page gives an introduction to creating native plugins',
       ref: 'plugin_intro.html'
     },
     {
       name: 'Accessing the API',
-      brief: 'The API functions can be accessed from the following DLLs:',
+      brief: 'This page describes how to load DLLs and use the wrangler',
       ref: 'plugin_wrangle_api.html'
     },
     {
@@ -8668,6 +9118,11 @@ $(document).ready(function() {
       name: 'New in 2020.2',
       brief: 'This page lists changes in version 2020',
       ref: 'v2020_1_to_v2020_2.html'
+    },
+    {
+      name: 'New in 2021.1',
+      brief: 'This page lists changes in version 2021',
+      ref: 'v2020_2_to_v2021_1.html'
     },
     {
       name: 'New in 2.1.0',
