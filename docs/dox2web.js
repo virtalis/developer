@@ -725,11 +725,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga0214b65c471d48e639d383c7132ac1d1'
     },
     {
-      name: 'vrSettingWrite',
-      brief: 'Writes the value of a setting',
-    ref: 'group__api__lua.html#1ga023b65361133210fd1ac2a484443428f'
-    },
-    {
       name: 'vrAddPropertyBool',
       brief: 'Adds a new boolean property to an unfinished metanode',
     ref: 'group__api__lua.html#1ga030a19ff32f636ee842bd5e1ae0c7ea7'
@@ -753,11 +748,6 @@ $(document).ready(function() {
       name: 'vrBodyFlyToFitBounds',
       brief: 'Flies the body to a position where it can see the whole of node, over time seconds',
     ref: 'group__api__lua.html#1ga05adff7fced2c6cf29f93e65aa7b34c1'
-    },
-    {
-      name: 'vrAddTransformNodeObserver',
-      brief: 'Add an observer to the SGNode of a vrtree node',
-    ref: 'group__api__lua.html#1ga061aeb16753fc5b79154093179c8b83f'
     },
     {
       name: 'vrScriptEditorSelectWord',
@@ -828,6 +818,11 @@ $(document).ready(function() {
       name: 'vrAddPropertyVectorBool',
       brief: 'Adds a new boolean vector property to an unfinished metanode',
     ref: 'group__api__lua.html#1ga10f8bc93a8ce02ae7fe3cdc7207e4335'
+    },
+    {
+      name: 'vrAddGlobalEventObserver',
+      brief: 'Adds an observer and callback function to execute for global events ',
+    ref: 'group__api__lua.html#1ga11b458665b1b68b97a3aeebf5164eafe'
     },
     {
       name: 'vrSetAppQuitHook',
@@ -990,6 +985,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga25bc0f80497e7ef9ef4c9013b881e4b6'
     },
     {
+      name: 'vrAddMetaNodeObserver',
+      brief: 'Adds an observer of events from a MetaNode',
+    ref: 'group__api__lua.html#1ga25c3e2a2ab0bce779062726c20a15efd'
+    },
+    {
       name: 'vrSetViewportLayout',
       brief: 'Sets the user\'s current viewport layout',
     ref: 'group__api__lua.html#1ga2615a6e0abb7fad941e73e5faaf9ea74'
@@ -1028,6 +1028,11 @@ $(document).ready(function() {
       name: 'vrGetGradientColourAt',
       brief: 'Gets the gradient colour ',
     ref: 'group__api__lua.html#1ga2a48b29270cd62572c40ddb10f4b8f9f'
+    },
+    {
+      name: 'vrSettingSetStep',
+      brief: 'Assigns a step size to a numerical setting',
+    ref: 'group__api__lua.html#1ga2a711e20d40cd55465461f5c32b2dd4f'
     },
     {
       name: 'vrSetSelectedTreeFrame',
@@ -1110,14 +1115,14 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga32530f94afb18401a297dda96462a5f4'
     },
     {
+      name: 'vrSettingGetNode',
+      brief: 'Gets an application setting node from the user registry, or a scene override if it exists',
+    ref: 'group__api__lua.html#1ga3260eac0919960af29754effbac1d3bc'
+    },
+    {
       name: 'vrMetaNodeGetPropertyCount',
       brief: 'Gets the number of properties defined by a MetaNode',
     ref: 'group__api__lua.html#1ga3261fa672021af760ac4261e4b7479bd'
-    },
-    {
-      name: 'vrAddPropertyObserver',
-      brief: 'Adds an observer of events from a property',
-    ref: 'group__api__lua.html#1ga327729644c6e46fa13273c9ff1515e79'
     },
     {
       name: 'vrAddPropertyVec4i',
@@ -1170,6 +1175,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga36eb86125aa6cda5f6f712230f263874'
     },
     {
+      name: 'vrBuildCurveViewConfig',
+      brief: 'Creates or updates the PhysicalScreen and Viewport nodes for a curved screen',
+    ref: 'group__api__lua.html#1ga3735d83aa760b1dabbfd1254c7cea1f2'
+    },
+    {
       name: 'vrAddPropertyChar',
       brief: 'Adds a new character property to an unfinished metanode',
     ref: 'group__api__lua.html#1ga37bb2deb498a091e666c8a956bf5d188'
@@ -1183,6 +1193,11 @@ $(document).ready(function() {
       name: 'vrCreateShape',
       brief: 'Creates a new shape and attaches it to a parent node',
     ref: 'group__api__lua.html#1ga382ada1549e0d3f4e5f5229366979a63'
+    },
+    {
+      name: 'vrSettingRead',
+      brief: 'Reads the value of a setting',
+    ref: 'group__api__lua.html#1ga3895fcdfad8542ed1d00814b2380a90d'
     },
     {
       name: 'vrScriptEditorCutSelection',
@@ -1310,6 +1325,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga4473693b9d5020e2960564f1e315b3a4'
     },
     {
+      name: 'vrSettingCreateString',
+      brief: 'Creates a new string user setting',
+    ref: 'group__api__lua.html#1ga44b4edc877664c47403a5d289c78cd19'
+    },
+    {
       name: 'vrAnnotationCreate',
       brief: 'Create an annotation at the specified location, linked to the specified object',
     ref: 'group__api__lua.html#1ga454230e7f5fbbc02b83c3b8d12608d41'
@@ -1343,6 +1363,11 @@ $(document).ready(function() {
       name: 'vrGetSelectedTreeFrame',
       brief: 'Returns the name of the selected tree frame',
     ref: 'group__api__lua.html#1ga46a063948acb694c1cfe0182887c5285'
+    },
+    {
+      name: 'vrSettingCreateInt',
+      brief: 'Creates a new integer user setting',
+    ref: 'group__api__lua.html#1ga47367832568cb2868744fe230f8cf8b5'
     },
     {
       name: 'vrNodeGetRotationX',
@@ -1605,6 +1630,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga5b800e4a5aac37f528286ee82869040d'
     },
     {
+      name: 'vrSettingCreateDouble',
+      brief: 'Creates a new double user setting',
+    ref: 'group__api__lua.html#1ga5bb84bbb849aacc1b972c54ea19c8958'
+    },
+    {
       name: 'vrNodeGetChild',
       brief: 'Gets the first child of a node',
     ref: 'group__api__lua.html#1ga5bde71208d9344aadbbc07a04d981d2c'
@@ -1688,11 +1718,6 @@ $(document).ready(function() {
       name: 'vrTreeViewSelectionExpandAll',
       brief: 'Expands the current selection and its descendants',
     ref: 'group__api__lua.html#1ga63b179f4954ba16f25d370fd429b310f'
-    },
-    {
-      name: 'vrAddNodeObserver',
-      brief: 'Adds an observer of events from a node',
-    ref: 'group__api__lua.html#1ga63c6fcb28e07f185c587f8d673f0de61'
     },
     {
       name: 'vrCreateNode',
@@ -1800,6 +1825,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga6df08932a8f38cf29b59a6ce20ab9a3f'
     },
     {
+      name: 'vrSettingCreateArrayInt',
+      brief: 'Creates a new integer array user setting',
+    ref: 'group__api__lua.html#1ga6e8645cdf39589f038092a5464879dc1'
+    },
+    {
       name: 'vrNodeGetLocalPositionX',
       brief: 'Gets the local x position of the node',
     ref: 'group__api__lua.html#1ga6f1c59d70f2b7cd343cbae6b3f06fb2d'
@@ -1833,6 +1863,11 @@ $(document).ready(function() {
       name: 'vrLengthSquared',
       brief: 'Returns the squared length of a vector',
     ref: 'group__api__lua.html#1ga71a5340de13288aebbdb6c2eb0758b3d'
+    },
+    {
+      name: 'vrSettingCreateArrayFloat',
+      brief: 'Creates a new float array user setting',
+    ref: 'group__api__lua.html#1ga71a7a47f2929a7f02396bdc338f1f1e9'
     },
     {
       name: 'vrUsingHMD',
@@ -1905,9 +1940,9 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7792348627827d4087732523c5c0fc57'
     },
     {
-      name: 'vrSettingGetNode',
-      brief: 'Gets an application setting node from the user registry, or a scene override if it exists',
-    ref: 'group__api__lua.html#1ga77ca277ff2f15252bc081ce13c8c942c'
+      name: 'vrSettingCreateLink',
+      brief: 'Creates a new link user setting',
+    ref: 'group__api__lua.html#1ga78901fa348d98b9ab58b4c8b185ca87d'
     },
     {
       name: 'vrIsDoublePrecision',
@@ -1978,11 +2013,6 @@ $(document).ready(function() {
       name: 'vrMakeBox',
       brief: 'Creates a box shape',
     ref: 'group__api__lua.html#1ga7d5f87b4e04477ce9981e48eecdf3990'
-    },
-    {
-      name: 'vrSettingGet',
-      brief: 'Gets an application setting from the user registry, or a scene override if it exists',
-    ref: 'group__api__lua.html#1ga7d75051afeb1781ce83861b995effcc4'
     },
     {
       name: 'vrShowInTreeViewFrame',
@@ -2058,6 +2088,11 @@ $(document).ready(function() {
       name: 'vrPlaneFromMatrix',
       brief: 'Returns a plane created from a matrix',
     ref: 'group__api__lua.html#1ga8314d63a513fadd9ed8e13db25e3c4bd'
+    },
+    {
+      name: 'vrSettingGetRoot',
+      brief: 'Gets the node associated with the root of the settings hierarchy',
+    ref: 'group__api__lua.html#1ga832b3619603dd5afddd9399580a37102'
     },
     {
       name: 'vrIsToolEnabled',
@@ -2213,6 +2248,11 @@ $(document).ready(function() {
       name: 'vrQuaternionLerp',
       brief: 'Returns the linear interpolation between two quaternions',
     ref: 'group__api__lua.html#1ga8faeef459f192b4964ed808b9153a1b5'
+    },
+    {
+      name: 'vrAddTransformNodeObserver',
+      brief: 'Add an observer to the SGNode of a vrtree node',
+    ref: 'group__api__lua.html#1ga8fe6bbf12d7a73923de10c30a01b8340'
     },
     {
       name: 'vrArcRadius',
@@ -2381,7 +2421,7 @@ $(document).ready(function() {
     },
     {
       name: 'vrAddSettingObserver',
-      brief: 'Add an observer of a setting',
+      brief: 'Adds an observer of a setting',
     ref: 'group__api__lua.html#1ga9d74a7a10383c5cced0e9574b6829617'
     },
     {
@@ -2398,6 +2438,11 @@ $(document).ready(function() {
       name: 'vrUserPluginsDir',
       brief: 'Gets the current applications users plug-ins directory',
     ref: 'group__api__lua.html#1ga9e9e14cb024766e269bcbdaaa4f5a812'
+    },
+    {
+      name: 'vrSettingSetCaption',
+      brief: 'Assigns a custom caption to a setting, allowing the text displayed in user interface to be different from the setting name',
+    ref: 'group__api__lua.html#1ga9ed3949600eede64df5721e6cd989cc4'
     },
     {
       name: 'vrLinkNetwork',
@@ -2540,11 +2585,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gaa7d539cf7160483581b0fac47261ae4e'
     },
     {
-      name: 'vrRemoveObserver',
-      brief: 'Removes an observer',
-    ref: 'group__api__lua.html#1gaa81ddda102f9ea9794ebcbaa793839f2'
-    },
-    {
       name: 'vrAddToolbarDock',
       brief: 'Adds a docked window to a notebook that toolbars can be added to',
     ref: 'group__api__lua.html#1gaa8ac4082ce32c6ab31433bcfa1519b94'
@@ -2640,6 +2680,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gab153977f4d683510674d3e3a45a125d6'
     },
     {
+      name: 'vrSettingGet',
+      brief: 'Gets an application setting from the user registry, or a scene override if it exists',
+    ref: 'group__api__lua.html#1gab22c36c57d73c7b8ce67e5369fdf452f'
+    },
+    {
       name: 'vrCreateViewpoint',
       brief: 'Creates a viewpoint at the current camera position',
     ref: 'group__api__lua.html#1gab22e56190a6cba996e90dc7f84c2322d'
@@ -2668,6 +2713,11 @@ $(document).ready(function() {
       name: 'vrPastePropagateLink',
       brief: 'Pastes the nodes on the clipboard as a link into all matching nodes and target properties',
     ref: 'group__api__lua.html#1gab4326bb32a0e2c33106724ee453e5e16'
+    },
+    {
+      name: 'vrSettingCreateBool',
+      brief: 'Creates a new boolean user setting',
+    ref: 'group__api__lua.html#1gab522d91ba487b6a5d408aff4d1dd7a5b'
     },
     {
       name: 'vrTreeSelect',
@@ -2715,6 +2765,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gab6897493fb9f1ffb3f07622cf62307d3'
     },
     {
+      name: 'vrSettingSetFilter',
+      brief: 'Assigns a filter to a setting',
+    ref: 'group__api__lua.html#1gab6b9d7c74e26e4a44cc5bb3b91a834e9'
+    },
+    {
       name: 'vrNodeGetLocalRotationX',
       brief: 'Gets the local x rotation of the node',
     ref: 'group__api__lua.html#1gab720d46ddb97bafb8dd08f2d4ccb695c'
@@ -2728,11 +2783,6 @@ $(document).ready(function() {
       name: 'vrProjTransformVec',
       brief: 'Transforms a vector by the current projection matrix',
     ref: 'group__api__lua.html#1gab83a251bec9d86052802d746c516d811'
-    },
-    {
-      name: 'vrSettingRead',
-      brief: 'Reads the value of a setting',
-    ref: 'group__api__lua.html#1gab86952a02a1101953a5d52b864bcfb02'
     },
     {
       name: 'vrProjInvTransformVec',
@@ -2870,9 +2920,19 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gac3208dc3dcb9744ecd1ee0bfebd00d8b'
     },
     {
+      name: 'vrSettingWrite',
+      brief: 'Writes the value of a setting',
+    ref: 'group__api__lua.html#1gac338c393256271fa5851d0a6982e2804'
+    },
+    {
       name: 'vrAnnotationEditCommentText',
       brief: 'Activates an interactive editor for editing an annotation comment',
     ref: 'group__api__lua.html#1gac4ca1edfd313594abe5f0e7c3f057609'
+    },
+    {
+      name: 'vrAddPropertyObserver',
+      brief: 'Adds an observer of one or more properties of a metanode',
+    ref: 'group__api__lua.html#1gac54574419ef434fa83bce4a77b1e3f9d'
     },
     {
       name: 'vrBodySetAng',
@@ -2913,6 +2973,11 @@ $(document).ready(function() {
       name: 'vrNodeGetTraits',
       brief: 'Gets the list of traits that this node has',
     ref: 'group__api__lua.html#1gac7b6f13a2975b23113088c07c461cd76'
+    },
+    {
+      name: 'vrSettingSetType',
+      brief: 'Assigns a type to a setting, which determines how the setting is presented in the user interface',
+    ref: 'group__api__lua.html#1gac7e71b22f0cbbde42e60250fbc4d4188'
     },
     {
       name: 'vrConfigModeAvailable',
@@ -3060,6 +3125,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gad3ced8524a672d1cc0012a79f361fd7c'
     },
     {
+      name: 'vrAddNodeObserver',
+      brief: 'Adds an observer of events from a node',
+    ref: 'group__api__lua.html#1gad485b003fd03b3cbf6296606f75db719'
+    },
+    {
       name: 'vrSelectHistoryEntry',
       brief: 'Navigates to an entry in the selection history',
     ref: 'group__api__lua.html#1gad4edbb98504cb40ea1a1916613c0459f'
@@ -3143,6 +3213,11 @@ $(document).ready(function() {
       name: 'vrNodeGetLocallyModified',
       brief: 'Queries whether or not this node\'s last modification was made by the local visionary render instance',
     ref: 'group__api__lua.html#1gadbc36c7384c6421f0afbdb786da99a2c'
+    },
+    {
+      name: 'vrAddEventObserver',
+      brief: 'Adds an observer and callback function to execute for events ',
+    ref: 'group__api__lua.html#1gadc17e7a64c8928bc3ab979953f9fd7f3'
     },
     {
       name: 'vrNodeArraySet',
@@ -3310,9 +3385,9 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gae6abdf0b781bb40672c432c9229f99a3'
     },
     {
-      name: 'vrAddMetaNodeObserver',
-      brief: 'Adds an observer of events from a MetaNode',
-    ref: 'group__api__lua.html#1gae6bebfd99942830b985c6f25aff91ae6'
+      name: 'vrRemoveObserver',
+      brief: 'Removes an observer',
+    ref: 'group__api__lua.html#1gae6e7242786fac62ef57c146fd0713d9e'
     },
     {
       name: 'vrNodeGetLocalMatrix',
@@ -3328,6 +3403,11 @@ $(document).ready(function() {
       name: 'vrShowSequence',
       brief: 'Shows the specified sequence in the sequencer window',
     ref: 'group__api__lua.html#1gae8582fb1ce31ece830de8f57a030b24f'
+    },
+    {
+      name: 'vrSettingCreateFloat',
+      brief: 'Creates a new float user setting',
+    ref: 'group__api__lua.html#1gae87d34aa6647d094d10d4aa5c3d487ae'
     },
     {
       name: 'vrPasteAsLinkToSelection',
@@ -3453,6 +3533,11 @@ $(document).ready(function() {
       name: 'vrQuaternion',
       brief: 'Return an identity quaternion',
     ref: 'group__api__lua.html#1gaf4c798d12a3c03f64ce240e638a96f09'
+    },
+    {
+      name: 'vrSettingCreateArrayDouble',
+      brief: 'Creates a new double array user setting',
+    ref: 'group__api__lua.html#1gaf57d03717ee80bf8fda3ff51d58b135d'
     },
     {
       name: 'vrNodeGetLocalScaleY',
@@ -4160,9 +4245,29 @@ $(document).ready(function() {
     ref: 'group__api__migrations.html#1gae7c547dbffb1f67d47c1afdccf4cd388'
     },
     {
+      name: 'VRRemoveCallbackRelease',
+      brief: 'Remove Release callback ',
+    ref: 'group__api__observer.html#1ga0babaed11d39f0042ec82de312bcaa8b'
+    },
+    {
+      name: 'VRAddCallbackTouch',
+      brief: 'Add Touch callback ',
+    ref: 'group__api__observer.html#1ga158fb3b63207d5c00021238072b7d92f'
+    },
+    {
       name: 'VRRemoveCallbackNodeChildRemovedEx',
       brief: 'Unregisters a function called whenever a node has children removed from it',
     ref: 'group__api__observer.html#1ga17da83d8fe38fa5c198c7e84311fb44c'
+    },
+    {
+      name: 'VRRemoveCallbackDoubleClick',
+      brief: 'Remove Double click callback ',
+    ref: 'group__api__observer.html#1ga17f231c7ba9a4eb4a2b38fbb1aa45ee5'
+    },
+    {
+      name: 'VRRemoveCallbackToggle',
+      brief: 'Remove Toggle callback ',
+    ref: 'group__api__observer.html#1ga1d1e4e56031283105eb47f7f90e2511a'
     },
     {
       name: 'VRAddCallbackNodeRenamed',
@@ -4170,14 +4275,44 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1ga22739d00b829a37d92f71e05aad8cd70'
     },
     {
+      name: 'VRRemoveCallbackEnter',
+      brief: 'Remove Enter callback ',
+    ref: 'group__api__observer.html#1ga2c4083f4ab0412d8f5b660d55a98e817'
+    },
+    {
       name: 'VRRemoveCallbackNodeCreation',
       brief: 'Unregisters a function called whenever a node is created',
     ref: 'group__api__observer.html#1ga2d14b1d12ae6e1781026dfddd6519a4f'
     },
     {
+      name: 'VRAddCallbackPoseLeft',
+      brief: 'Add Pose left callback ',
+    ref: 'group__api__observer.html#1ga2dfef143350e170cf27331edf9020171'
+    },
+    {
       name: 'VRAddCallbackNodeParentChanged',
       brief: 'Registers a function to be called whenever a node is moved to a new parent',
     ref: 'group__api__observer.html#1ga2ea899621ad0bd821c07afd9353db9e7'
+    },
+    {
+      name: 'VRAddCallbackDoubleClick',
+      brief: 'Add Double click callback ',
+    ref: 'group__api__observer.html#1ga31f4d9fc3fdae221c79aa2a500b74ef2'
+    },
+    {
+      name: 'VRAddCallbackGesture',
+      brief: 'Add Gesture callback ',
+    ref: 'group__api__observer.html#1ga32d47d1c5f366941fee64d150e1e6974'
+    },
+    {
+      name: 'VRAddCallbackRelease',
+      brief: 'Add Release callback ',
+    ref: 'group__api__observer.html#1ga3a87ca8065567041796f551110e9190f'
+    },
+    {
+      name: 'VRAddCallbackKeyPress',
+      brief: 'Add Key press callback ',
+    ref: 'group__api__observer.html#1ga428154f0e26e85d425c4f1a2d90a8d33'
     },
     {
       name: 'VRAddCallbackNodeChildRemoved',
@@ -4195,6 +4330,21 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1ga53056b51857ca9d2e0ec52ea74404da1'
     },
     {
+      name: 'VRRemoveCallbackKeyPress',
+      brief: 'Remove Key press callback ',
+    ref: 'group__api__observer.html#1ga5b55b5196ca4e634347e986341f2f11c'
+    },
+    {
+      name: 'VRAddCallbackLeave',
+      brief: 'Add Leave callback ',
+    ref: 'group__api__observer.html#1ga5c488951da8386a7168556b589e3bdec'
+    },
+    {
+      name: 'VRRemoveCallbackMove',
+      brief: 'Remove Move callback ',
+    ref: 'group__api__observer.html#1ga5fdd801bc850d1326dda6e49e66623d6'
+    },
+    {
       name: 'VRRemoveCallbackNodeRenamed',
       brief: 'Unregisters a function called whenever a node is renamed',
     ref: 'group__api__observer.html#1ga6ca097075503cc31502209a903d30b12'
@@ -4203,6 +4353,11 @@ $(document).ready(function() {
       name: 'VRRemoveCallbackNodeValuesChanged',
       brief: 'Unregisters a function called whenever a node is modified',
     ref: 'group__api__observer.html#1ga6e2955e1c6e699dff97a316cf0f03086'
+    },
+    {
+      name: 'VRRemoveCallbackClick',
+      brief: 'Remove Click callback ',
+    ref: 'group__api__observer.html#1ga72928e19047edf604247005fce5a36cc'
     },
     {
       name: 'VRRemoveCallbackNodeRenamedEx',
@@ -4220,9 +4375,44 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1ga8b81ec43948de283257aaf4370768cc0'
     },
     {
+      name: 'VRRemoveCallbackPoseLeft',
+      brief: 'Remove Pose left callback ',
+    ref: 'group__api__observer.html#1ga8d24dddef8fead4c51235c4357b9d52c'
+    },
+    {
       name: 'VRRemoveCallbackNodeCreationEx',
       brief: 'Unregisters a function called whenever a node is created',
     ref: 'group__api__observer.html#1ga8dbbafd94570881661ef8912a1b7a46e'
+    },
+    {
+      name: 'VRRemoveCallbackPress',
+      brief: 'Remove Press callback ',
+    ref: 'group__api__observer.html#1ga965641140d215ee3f313a57eb7747a6a'
+    },
+    {
+      name: 'VRAddCallbackPress',
+      brief: 'Add Press callback ',
+    ref: 'group__api__observer.html#1ga96728a3ad6f96006149e92b625c00b7e'
+    },
+    {
+      name: 'VRRemoveCallbackTouch',
+      brief: 'Remove Touch callback ',
+    ref: 'group__api__observer.html#1ga988eb6ddaa62663fce9a1181105c3b8c'
+    },
+    {
+      name: 'VRRemoveCallbackKeyRelease',
+      brief: 'Remove Key release callback ',
+    ref: 'group__api__observer.html#1gaa138c2d56be4372b6abf01c576a4a3b1'
+    },
+    {
+      name: 'VRAddCallbackPoseEntered',
+      brief: 'Add Pose entered callback ',
+    ref: 'group__api__observer.html#1gaa317f7d918a5c7f5bf164078f93948d0'
+    },
+    {
+      name: 'VRAddCallbackEnter',
+      brief: 'Add Enter callback ',
+    ref: 'group__api__observer.html#1gaa3c83577827b7e1db6ffec9f7084c9bb'
     },
     {
       name: 'VRRemoveCallbackNodeParentChangedEx',
@@ -4230,9 +4420,34 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1gaaca4ee804b52de326f010f99fa4817ef'
     },
     {
+      name: 'VRRemoveCallbackLeave',
+      brief: 'Remove Leave callback ',
+    ref: 'group__api__observer.html#1gab5b698580a5e574cf3576f96e62e55b6'
+    },
+    {
+      name: 'VRAddCallbackKeyRelease',
+      brief: 'Add Key release callback ',
+    ref: 'group__api__observer.html#1gab9148c8e5fe003f8430a76ed4eb9910a'
+    },
+    {
       name: 'VRRemoveCallbackNodeChildAdded',
       brief: 'Unregisters a function called whenever a node has children added to it',
     ref: 'group__api__observer.html#1gabac31a828f3c3ccb2e09e07848e30569'
+    },
+    {
+      name: 'VRRemoveCallbackGesture',
+      brief: 'Remove Gesture callback ',
+    ref: 'group__api__observer.html#1gabbe28d8e9a559e7e891b6bfc8dad36eb'
+    },
+    {
+      name: 'VRAddCallbackMove',
+      brief: 'Add Move callback',
+    ref: 'group__api__observer.html#1gabf0c17d59bd987104007854d6b693928'
+    },
+    {
+      name: 'VRAddCallbackClick',
+      brief: 'Add Click callback ',
+    ref: 'group__api__observer.html#1gac2f0a11cc05488066c79ac98c482dcd2'
     },
     {
       name: 'VRRemoveCallbackNodeChildRemoved',
@@ -4245,6 +4460,11 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1gac3f4a186d1157387d8df26fa0b31ed5f'
     },
     {
+      name: 'VRRemoveCallbackBreak',
+      brief: 'Remove Break callback ',
+    ref: 'group__api__observer.html#1gac4ae1627dbb6c0a9ba71ce8693bf87d4'
+    },
+    {
       name: 'VRAddCallbackNodeValuesChanged',
       brief: 'Registers a function to be called whenever a node is modified',
     ref: 'group__api__observer.html#1gac9462e4b0bafe412eb98fcff55075076'
@@ -4255,9 +4475,34 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1gaca16f17e9e9044d7076ea61ef3488e76'
     },
     {
+      name: 'VRRemoveCallbackPoseEntered',
+      brief: 'Remove Pose entered callback ',
+    ref: 'group__api__observer.html#1gacedaa789935da3dcb33e40bdceec8f7d'
+    },
+    {
       name: 'VRAddCallbackNodeCreation',
       brief: 'Registers a function to be called whenever a node is created',
     ref: 'group__api__observer.html#1gad353c36919303e70556737141945a665'
+    },
+    {
+      name: 'VRAddCallbackActivate',
+      brief: 'Event callbacks',
+    ref: 'group__api__observer.html#1gad6d50e76d7a57ba11b6267602f18d9f4'
+    },
+    {
+      name: 'VRRemoveCallbackActivate',
+      brief: 'Remove callback for Activate event of a node and the other node deactivated',
+    ref: 'group__api__observer.html#1gad94b66f02df7e0aedfbdba0068b3534e'
+    },
+    {
+      name: 'VRAddCallbackBreak',
+      brief: 'Add Break callback ',
+    ref: 'group__api__observer.html#1gada1cb9238dbc01ca18ead090e1fe277b'
+    },
+    {
+      name: 'VRAddCallbackToggle',
+      brief: 'Add Toggle callback ',
+    ref: 'group__api__observer.html#1gae04e74bcc526ab4afadd6fe13c5ac621'
     },
     {
       name: 'VRRemoveCallbackUpdate',
@@ -4925,6 +5170,11 @@ $(document).ready(function() {
     ref: 'group__api__proto.html#1ga5591c49eba27cb6e4ecfc383073f4015'
     },
     {
+      name: 'EventTwoNodesFunc',
+      brief: 'Signature of a function that is called when two nodes interact ',
+    ref: 'group__api__proto.html#1ga683d19e0087cc5be0d447f3c96444a50'
+    },
+    {
       name: 'ScriptEventFunc',
       brief: 'Signature of a function that is called in response to a registered script event',
     ref: 'group__api__proto.html#1ga6d8e217d6f6bec3f954c334284849117'
@@ -4945,9 +5195,19 @@ $(document).ready(function() {
     ref: 'group__api__proto.html#1ga8536dd988c51de0bf7530c402f3728c7'
     },
     {
+      name: 'EventNodeFunc',
+      brief: 'Signature of a function that is called when a node state is changed ',
+    ref: 'group__api__proto.html#1ga8708da77fa521be83d964cebde2c13c3'
+    },
+    {
       name: 'SettingChangedFunc',
       brief: 'Signature of a function that is called when a setting is changed',
     ref: 'group__api__proto.html#1ga944e8b7a06ce9695b03772db333755e6'
+    },
+    {
+      name: 'EventTwoNodesUserFunc',
+      brief: 'Signature of a function that is called when two nodes interact ',
+    ref: 'group__api__proto.html#1gaa908224d0372e3a24092d4d8fd0ff221'
     },
     {
       name: 'NodeChildAddedFunc',
@@ -4978,6 +5238,16 @@ $(document).ready(function() {
       name: 'NodeDestroyingFunc',
       brief: 'Signature of a function that is called when a node is about to be deleted',
     ref: 'group__api__proto.html#1gadba08cacf5871a5825411894bda72d4c'
+    },
+    {
+      name: 'EventKeyFunc',
+      brief: 'Signature of a function that is called when a key state is changed ',
+    ref: 'group__api__proto.html#1gaecc6b18360b77bb263e6a43cc1c64fbe'
+    },
+    {
+      name: 'EventGestureFunc',
+      brief: 'Signature of a function that is called when a key code is changed ',
+    ref: 'group__api__proto.html#1gaf188e51c4fc1a36bae155176fbe0ea57'
     },
     {
       name: 'MigrationFunc',
@@ -9123,6 +9393,11 @@ $(document).ready(function() {
       name: 'New in 2021.1',
       brief: 'This page lists changes in version 2021',
       ref: 'v2020_2_to_v2021_1.html'
+    },
+    {
+      name: 'New in 2021.2',
+      brief: 'This page lists changes in version 2021',
+      ref: 'v2021_1_to_v2021_2.html'
     },
     {
       name: 'New in 2.1.0',
