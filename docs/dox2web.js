@@ -736,7 +736,7 @@ $(document).ready(function() {
     },
     {
       name: 'vrIsVR4CAD',
-      brief: 'Returns whether or not we are currently running VR4CAD',
+      brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1ga038b46ec7c9b74b7ade1647e9e037035'
     },
     {
@@ -6175,11 +6175,6 @@ $(document).ready(function() {
     ref: 'struct_meta___convex_decomposition.html#1a3df721b9c5de66dc2b8ef19225e3891a'
     },
     {
-      name: 'IDX',
-      brief: '',
-    ref: 'struct_meta___daqri_viewport.html#1a83a6367fb412ea9a24d542fc64ba0db3'
-    },
-    {
       name: '@10',
       brief: 'Property index',
     ref: 'struct_meta___dimension.html#1a21a89a590099262eafab7c08eb775cf9'
@@ -7293,6 +7288,11 @@ $(document).ready(function() {
       name: 'Meta_SystemCollision',
       brief: '',
     ref: 'struct_meta___system_collision.html#1ab19008ddad71ca334c50892fc5661ec9'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___text_box.html#1ab3e5e60994053e093144dd326c27a4a1'
     },
     {
       name: 'Minify',
@@ -9398,6 +9398,11 @@ $(document).ready(function() {
       name: 'New in 2021.2',
       brief: 'This page lists changes in version 2021',
       ref: 'v2021_1_to_v2021_2.html'
+    },
+    {
+      name: 'New in 2021.3',
+      brief: 'This page lists changes in version 2021',
+      ref: 'v2021_2_to_v2021_3.html'
     },
     {
       name: 'New in 2.1.0',
