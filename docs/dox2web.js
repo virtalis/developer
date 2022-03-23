@@ -6175,9 +6175,9 @@ $(document).ready(function() {
     ref: 'struct_meta___convex_decomposition.html#1a3df721b9c5de66dc2b8ef19225e3891a'
     },
     {
-      name: '@10',
+      name: '@9',
       brief: 'Property index',
-    ref: 'struct_meta___dimension.html#1a21a89a590099262eafab7c08eb775cf9'
+    ref: 'struct_meta___dimension.html#1a51ad788c34aaf22384edcb9b994cb81e'
     },
     {
       name: 'IDX',
@@ -6295,9 +6295,9 @@ $(document).ready(function() {
     ref: 'struct_meta___gesture_guard.html#1abb042651fe65138c50f0752b71e50940'
     },
     {
-      name: '@5',
+      name: 'IDX',
       brief: 'Property index',
-    ref: 'struct_meta___gradient.html#1a06cb24c3348822ff8d333884ec377671'
+    ref: 'struct_meta___gradient.html#1a2259f391c399a641b46274d23814ac73'
     },
     {
       name: 'IDX',
@@ -6305,9 +6305,9 @@ $(document).ready(function() {
     ref: 'struct_meta___gradient_panel_style.html#1a7634063f834ad7453ef16380ae5faf35'
     },
     {
-      name: '@6',
+      name: '@5',
       brief: 'Property index',
-    ref: 'struct_meta___gradient_point.html#1ad4414f8f18cf9035a595d26b0e142ac0'
+    ref: 'struct_meta___gradient_point.html#1a5ae92d8ab89290e11037e1fddb149739'
     },
     {
       name: 'IDX',
@@ -6315,14 +6315,9 @@ $(document).ready(function() {
     ref: 'struct_meta___group_member.html#1ab322fc2dd971c49836b7e10ae232c40c'
     },
     {
-      name: '@18',
+      name: '@17',
       brief: '',
-    ref: 'struct_meta___gui_group_hint.html#1a1b255398525033fe2fe5419282342544'
-    },
-    {
-      name: '@16',
-      brief: '',
-    ref: 'struct_meta___gui_hints.html#1a498db580e3cff8b3c39373721b7da072'
+    ref: 'struct_meta___gui_group_hint.html#1ab001fe9dfeee0ff69deddc0dede923ea'
     },
     {
       name: 'SearchMode',
@@ -6332,17 +6327,27 @@ $(document).ready(function() {
     {
       name: '@15',
       brief: '',
-    ref: 'struct_meta___gui_hints_link.html#1a971f5b254f3a2d85b1f341ee74d9a63f'
+    ref: 'struct_meta___gui_hints.html#1aaad42d99ba35b289b2f2834327b1f0c9'
     },
     {
-      name: '@17',
+      name: '@14',
       brief: '',
-    ref: 'struct_meta___gui_option_hint.html#1a0da0f6771c93326730b57024fd06f370'
+    ref: 'struct_meta___gui_hints_link.html#1a3cc782f4ce419baa5b6ef9a87fc80f3a'
     },
     {
-      name: '@19',
+      name: '@16',
       brief: '',
-    ref: 'struct_meta___gui_order_hint.html#1a9272d2f92e7efc3ec5379093fd29946c'
+    ref: 'struct_meta___gui_option_hint.html#1ab8890d9b8c2cc0e7627a60c18cfd5749'
+    },
+    {
+      name: '@18',
+      brief: '',
+    ref: 'struct_meta___gui_order_hint.html#1ab33faa87a2c7a321423eb631b46def20'
+    },
+    {
+      name: '@7',
+      brief: 'Property index',
+    ref: 'struct_meta___haptic_device.html#1a04ca4431f3c03e1db877a3e76f111423'
     },
     {
       name: 'SpaceMode',
@@ -6355,19 +6360,14 @@ $(document).ready(function() {
     ref: 'struct_meta___haptic_device.html#1a2a94607307a17ab8ef101e2d1f58ad1c'
     },
     {
-      name: '@8',
-      brief: 'Property index',
-    ref: 'struct_meta___haptic_device.html#1aef5a5f697980796a01261de24d9cd9ae'
-    },
-    {
       name: 'CollisionNodeType',
       brief: 'Values for Idx_Type',
     ref: 'struct_meta___haptic_node.html#1a7d73c30b3db64ac9582839b033e094d7'
     },
     {
-      name: '@7',
+      name: '@6',
       brief: 'Property index',
-    ref: 'struct_meta___haptic_node.html#1a8a90a5e0cdaa1f2f13686d61c357a40b'
+    ref: 'struct_meta___haptic_node.html#1ad887251978aae39cfb72af861e78586b'
     },
     {
       name: 'IDX',
@@ -6560,9 +6560,9 @@ $(document).ready(function() {
     ref: 'struct_meta___material_selector.html#1a603e51fe06df8bbb746af7c3632aa949'
     },
     {
-      name: '@9',
+      name: '@8',
       brief: 'Property index',
-    ref: 'struct_meta___measuring_point.html#1ab7d04781156fcdb45572267ff4afdd57'
+    ref: 'struct_meta___measuring_point.html#1ac609b92102525287808dcaa7682be59d'
     },
     {
       name: 'IDX',
@@ -6720,14 +6720,14 @@ $(document).ready(function() {
     ref: 'struct_meta___oculus_viewport.html#1a2d16c4b0325aa1eeff3a9d57d048c4cc'
     },
     {
-      name: '@11',
+      name: '@10',
       brief: '',
-    ref: 'struct_meta___op_progress.html#1a93276521e3e99e70209722884e9dec4c'
+    ref: 'struct_meta___op_progress.html#1a1052b62fe4d69cb5981aa7d122b0e969'
     },
     {
-      name: '@12',
+      name: '@11',
       brief: '',
-    ref: 'struct_meta___op_progress_yield.html#1ab7257377026933d6eaf012269124eaea'
+    ref: 'struct_meta___op_progress_yield.html#1ad16b0b53802e05402186d897680a28ca'
     },
     {
       name: 'IDX',
@@ -7015,14 +7015,14 @@ $(document).ready(function() {
     ref: 'struct_meta___prop_semantics_1_1_range.html#1ac99365be4a3d0cb8141fe855202c99c6'
     },
     {
-      name: '@13',
+      name: '@12',
       brief: '',
-    ref: 'struct_meta___prop_semantics.html#1ae21994352b69cfdad096871366b80a9d'
+    ref: 'struct_meta___prop_semantics.html#1ae38fd9a061bfab4ca8a13b8a25820d3c'
     },
     {
-      name: '@14',
+      name: '@13',
       brief: '',
-    ref: 'struct_meta___prop_semantics_link.html#1a5cfa4d39b71a500be9ba1a674bdd67c3'
+    ref: 'struct_meta___prop_semantics_link.html#1acb6e58ca1327499870d80b9366866e28'
     },
     {
       name: 'IDX',
@@ -9180,7 +9180,7 @@ $(document).ready(function() {
       ref: 'howto.html'
     },
     {
-      name: 'Scripting',
+      name: 'Scripts',
       brief: 'This section provides tutorials on how to achieve specific tasks with Lua scripts',
       ref: 'howto_lua.html'
     },
