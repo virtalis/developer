@@ -921,7 +921,7 @@ $(document).ready(function() {
     },
     {
       name: 'vrNodeGetChildByIndex',
-      brief: 'Gets a nodes child by its zero-based index',
+      brief: 'Gets a nodes child by its zero-based indexvrNodeGetChild and vrNodeGetSibling instead ',
     ref: 'group__api__lua.html#1ga1caaba18cc3545930ae3aa3cfe41a5f8'
     },
     {
@@ -1353,11 +1353,6 @@ $(document).ready(function() {
       name: 'vrMakeTorus',
       brief: 'Creates a torus shape',
     ref: 'group__api__lua.html#1ga4591b6f4a1773fe399ab855976c4d1ac'
-    },
-    {
-      name: 'vrEnableWhenIrayAvailable',
-      brief: 'Disables a menu item depending on the iray bit & the immersion mode',
-    ref: 'group__api__lua.html#1ga460c8e5efada4eff66f7ab1827e7aa94'
     },
     {
       name: 'vrGetSelectedTreeFrame',
@@ -2005,11 +2000,6 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga7ba2412a23dfc41fc929f21782060eba'
     },
     {
-      name: 'vrEnableWhenInteractiveAvailable',
-      brief: 'Registers the switch to interactive button to listen for immersion mode changes and enable/disable depending on those',
-    ref: 'group__api__lua.html#1ga7bd16a6a186d13de6c917e375241eb24'
-    },
-    {
       name: 'vrMakeBox',
       brief: 'Creates a box shape',
     ref: 'group__api__lua.html#1ga7d5f87b4e04477ce9981e48eecdf3990'
@@ -2596,7 +2586,7 @@ $(document).ready(function() {
     },
     {
       name: 'vrNodeGetChildCount',
-      brief: 'Counts the children of a node',
+      brief: 'Counts the children of a nodevrNodeGetChild and vrNodeGetSibling instead ',
     ref: 'group__api__lua.html#1gaaa87f13bca5a8c9fe8080f19bc0870b4'
     },
     {
@@ -3020,6 +3010,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gacbc745c8c1710463b5da6ce54338f786'
     },
     {
+      name: 'vrPositionAtBody',
+      brief: 'Moves a node to the user\'s current position and orientation',
+    ref: 'group__api__lua.html#1gacbe07eec485a52f8d4c8f52421a35907'
+    },
+    {
       name: 'vrWitnessSetModel',
       brief: 'INTERNAL',
     ref: 'group__api__lua.html#1gacbf7392878ae70ae01c0f8cc4cd8bffc'
@@ -3093,11 +3088,6 @@ $(document).ready(function() {
       name: 'vrTreeControlRangeSelect',
       brief: 'Selects or deselects all nodes between the specified node and the last selected node without affecting the rest of the selection',
     ref: 'group__api__lua.html#1gacfb4b652507ab1362715ecac42612264'
-    },
-    {
-      name: 'vrEnableWhenPhotorealAvailable',
-      brief: 'Registers the switch to photoreal button to listen for immersion mode changes and enable/disable depending on those',
-    ref: 'group__api__lua.html#1gad0927d4a4461b3be5cadb58098d3a83e'
     },
     {
       name: 'vrNodeSetScaleZ',
@@ -3613,6 +3603,11 @@ $(document).ready(function() {
       name: 'vrSmoothStep',
       brief: 'Return a smoothly interpolated value between A and B',
     ref: 'group__api__lua.html#1gafe0840a7002eeca8eb0ff9ed5f3ab6af'
+    },
+    {
+      name: 'vrtree_API',
+      brief: '',
+    ref: 'group__api__metadefs.html#1gaa0def1b4206318fec1f8dc899b8ecfde'
     },
     {
       name: 'VRCloseMetaHandle',
@@ -5755,6 +5750,11 @@ $(document).ready(function() {
     ref: 'group__api__utils.html#1gaeeeeeac201620e9baf3e2b47c8013ae3'
     },
     {
+      name: 'RegisterManikinMetaNodes',
+      brief: '',
+    ref: 'meta__manikin_8hpp.html#1a398e2c6687a1c7db1ff552435e5d6ff8'
+    },
+    {
       name: 'readStringProp',
       brief: 'Utility function for reading a string property',
     ref: 'namespacevrtree__cpp.html#1a02ff9619da2789d38e20ef57628a0629'
@@ -6046,6 +6046,16 @@ $(document).ready(function() {
     },
     {
       name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___bone.html#1ab44fe122e41e95f11d21634e66a05824'
+    },
+    {
+      name: 'Axis',
+      brief: 'Values for the Axis property',
+    ref: 'struct_meta___bone.html#1ac00475f9087def7a10cbc20f4bb595b8'
+    },
+    {
+      name: 'IDX',
       brief: 'Property index',
     ref: 'struct_meta___buffered_stack.html#1a777a2f9abd2cc64965cd22494c896cb8'
     },
@@ -6073,6 +6083,11 @@ $(document).ready(function() {
       name: 'IDX',
       brief: 'Property index',
     ref: 'struct_meta___chroma_key_texture.html#1aa3e8229c41b32440a7a3c101724771ce'
+    },
+    {
+      name: 'GROUP_HELPERS',
+      brief: 'defines a collision group for immersive helpers that require collision with the avatar but with not the picking rays ',
+    ref: 'struct_meta___collision.html#1a1d09ca2063289eea6a17efe1ebf5b87f'
     },
     {
       name: 'GROUP_PICKING',
@@ -6175,9 +6190,14 @@ $(document).ready(function() {
     ref: 'struct_meta___convex_decomposition.html#1a3df721b9c5de66dc2b8ef19225e3891a'
     },
     {
-      name: '@9',
+      name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___deformable.html#1a00bcb47be8861a71dcd172170f76b620'
+    },
+    {
+      name: '@8',
       brief: 'Property index',
-    ref: 'struct_meta___dimension.html#1a51ad788c34aaf22384edcb9b994cb81e'
+    ref: 'struct_meta___dimension.html#1a6d9bac068d34ff5a76e902a74780d7c1'
     },
     {
       name: 'IDX',
@@ -6305,9 +6325,9 @@ $(document).ready(function() {
     ref: 'struct_meta___gradient_panel_style.html#1a7634063f834ad7453ef16380ae5faf35'
     },
     {
-      name: '@5',
+      name: '@4',
       brief: 'Property index',
-    ref: 'struct_meta___gradient_point.html#1a5ae92d8ab89290e11037e1fddb149739'
+    ref: 'struct_meta___gradient_point.html#1a2e6df8c23db50ca3d4ba953637959711'
     },
     {
       name: 'IDX',
@@ -6315,9 +6335,9 @@ $(document).ready(function() {
     ref: 'struct_meta___group_member.html#1ab322fc2dd971c49836b7e10ae232c40c'
     },
     {
-      name: '@17',
+      name: '@16',
       brief: '',
-    ref: 'struct_meta___gui_group_hint.html#1ab001fe9dfeee0ff69deddc0dede923ea'
+    ref: 'struct_meta___gui_group_hint.html#1afe643b635044aaa70ef51f3ae094f105'
     },
     {
       name: 'SearchMode',
@@ -6325,29 +6345,24 @@ $(document).ready(function() {
     ref: 'struct_meta___gui_hints.html#1a76acf238f41a82187b8a1cafa18aa899'
     },
     {
-      name: '@15',
-      brief: '',
-    ref: 'struct_meta___gui_hints.html#1aaad42d99ba35b289b2f2834327b1f0c9'
-    },
-    {
       name: '@14',
       brief: '',
-    ref: 'struct_meta___gui_hints_link.html#1a3cc782f4ce419baa5b6ef9a87fc80f3a'
+    ref: 'struct_meta___gui_hints.html#1af328972058b74da7ca33ee73e86d54c1'
     },
     {
-      name: '@16',
+      name: '@13',
       brief: '',
-    ref: 'struct_meta___gui_option_hint.html#1ab8890d9b8c2cc0e7627a60c18cfd5749'
+    ref: 'struct_meta___gui_hints_link.html#1a9699f39d327462498ddba584604ee470'
     },
     {
-      name: '@18',
+      name: '@15',
       brief: '',
-    ref: 'struct_meta___gui_order_hint.html#1ab33faa87a2c7a321423eb631b46def20'
+    ref: 'struct_meta___gui_option_hint.html#1a62ffc4224b13901cdb28856126d92a24'
     },
     {
-      name: '@7',
-      brief: 'Property index',
-    ref: 'struct_meta___haptic_device.html#1a04ca4431f3c03e1db877a3e76f111423'
+      name: '@17',
+      brief: '',
+    ref: 'struct_meta___gui_order_hint.html#1aab89b617a5f6ae490f516b19ac9c62b2'
     },
     {
       name: 'SpaceMode',
@@ -6355,9 +6370,19 @@ $(document).ready(function() {
     ref: 'struct_meta___haptic_device.html#1a1b09a8ffaf28c1f885744a31dc10f191'
     },
     {
+      name: '@6',
+      brief: 'Property index',
+    ref: 'struct_meta___haptic_device.html#1a279ffae6384827f04503f46b4902f05c'
+    },
+    {
       name: 'TouchableFace',
       brief: 'Values for Idx_TouchableFace',
     ref: 'struct_meta___haptic_device.html#1a2a94607307a17ab8ef101e2d1f58ad1c'
+    },
+    {
+      name: '@5',
+      brief: 'Property index',
+    ref: 'struct_meta___haptic_node.html#1a220eb871e812b1af03e1cd6aa15f6871'
     },
     {
       name: 'CollisionNodeType',
@@ -6365,44 +6390,9 @@ $(document).ready(function() {
     ref: 'struct_meta___haptic_node.html#1a7d73c30b3db64ac9582839b033e094d7'
     },
     {
-      name: '@6',
-      brief: 'Property index',
-    ref: 'struct_meta___haptic_node.html#1ad887251978aae39cfb72af861e78586b'
-    },
-    {
       name: 'IDX',
       brief: '',
     ref: 'struct_meta___hololens_remoting_viewport.html#1ae2a4195dd11e8ce3250ed7bca13551b8'
-    },
-    {
-      name: 'IDX',
-      brief: 'Property index',
-    ref: 'struct_meta___i_ray_function_call.html#1a679a7b9a7b1e4e21fbeb045a2494760c'
-    },
-    {
-      name: 'IDX',
-      brief: 'Property index',
-    ref: 'struct_meta___i_ray_material_definition.html#1a5bb49a85214a9af581eed89966f705f8'
-    },
-    {
-      name: 'Meta_IRayMaterialFile',
-      brief: '',
-    ref: 'struct_meta___i_ray_material_file.html#1a0bcdfa619c395a19157bc5bc29eadfc1'
-    },
-    {
-      name: '@1',
-      brief: '',
-    ref: 'struct_meta___i_ray_material_file.html#1a846ee363dc25266354f7908a22ed531c'
-    },
-    {
-      name: 'IDX',
-      brief: '',
-    ref: 'struct_meta___i_ray_material_file.html#1a8b8784f25368819fae36221c2d4dcfa2'
-    },
-    {
-      name: 'IDX',
-      brief: 'Property index',
-    ref: 'struct_meta___i_ray_material_instance.html#1adab5ac1584fea80dd8fbda285e887c59'
     },
     {
       name: 'SizeMode',
@@ -6560,9 +6550,9 @@ $(document).ready(function() {
     ref: 'struct_meta___material_selector.html#1a603e51fe06df8bbb746af7c3632aa949'
     },
     {
-      name: '@8',
+      name: '@7',
       brief: 'Property index',
-    ref: 'struct_meta___measuring_point.html#1ac609b92102525287808dcaa7682be59d'
+    ref: 'struct_meta___measuring_point.html#1aebfb9768e11890158f8f2095d9420758'
     },
     {
       name: 'IDX',
@@ -6720,19 +6710,24 @@ $(document).ready(function() {
     ref: 'struct_meta___oculus_viewport.html#1a2d16c4b0325aa1eeff3a9d57d048c4cc'
     },
     {
-      name: '@10',
+      name: '@9',
       brief: '',
-    ref: 'struct_meta___op_progress.html#1a1052b62fe4d69cb5981aa7d122b0e969'
+    ref: 'struct_meta___op_progress.html#1ae30d8ca21557c878a95829cc63cf8b46'
     },
     {
-      name: '@11',
+      name: '@10',
       brief: '',
-    ref: 'struct_meta___op_progress_yield.html#1ad16b0b53802e05402186d897680a28ca'
+    ref: 'struct_meta___op_progress_yield.html#1a4ab9821bf397f433a485437867321cb2'
     },
     {
       name: 'IDX',
       brief: '',
     ref: 'struct_meta___open_v_r_viewport.html#1ad4d8eefbdf6e4928dd0949b6307ef9e3'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'struct_meta___open_x_r_viewport.html#1a88b3c9f4656235f89ca4445ed20bb287'
     },
     {
       name: 'SizingMode',
@@ -6846,7 +6841,7 @@ $(document).ready(function() {
     },
     {
       name: 'FileList',
-      brief: 'Represents a path to a file drop down',
+      brief: 'Represents a path to a file drop down with a file select button',
     ref: 'struct_meta___prop_semantics_1_1_prop_type.html#1a1fe87209fdbec089110c6df33c1a391d'
     },
     {
@@ -6883,6 +6878,11 @@ $(document).ready(function() {
       name: 'SingleLineText',
       brief: 'Represents a single-line text edit',
     ref: 'struct_meta___prop_semantics_1_1_prop_type.html#1a82dad81556894a96408343e80fb59e02'
+    },
+    {
+      name: 'RestrictedFileList',
+      brief: 'Represents a path to a file drop down',
+    ref: 'struct_meta___prop_semantics_1_1_prop_type.html#1a86d4394a35afe311af67d91f94f07baf'
     },
     {
       name: 'Colour',
@@ -7015,14 +7015,14 @@ $(document).ready(function() {
     ref: 'struct_meta___prop_semantics_1_1_range.html#1ac99365be4a3d0cb8141fe855202c99c6'
     },
     {
-      name: '@12',
+      name: '@11',
       brief: '',
-    ref: 'struct_meta___prop_semantics.html#1ae38fd9a061bfab4ca8a13b8a25820d3c'
+    ref: 'struct_meta___prop_semantics.html#1a53338b0481aeb22498ce8f41f0fac14b'
     },
     {
-      name: '@13',
+      name: '@12',
       brief: '',
-    ref: 'struct_meta___prop_semantics_link.html#1acb6e58ca1327499870d80b9366866e28'
+    ref: 'struct_meta___prop_semantics_link.html#1a896ef159e1800312f5e12fbd331cd4da'
     },
     {
       name: 'IDX',
@@ -7245,14 +7245,19 @@ $(document).ready(function() {
     ref: 'struct_meta___std_material.html#1a4e8358b24cb0896404fbd8f447ba595f'
     },
     {
+      name: 'TextureChannels',
+      brief: '',
+    ref: 'struct_meta___std_material.html#1a5e0bd18c7fec398ed857d83463932cc3'
+    },
+    {
       name: 'IDX',
       brief: 'Property index',
     ref: 'struct_meta___std_material.html#1a983281ba9b2ca911221377923fc6377d'
     },
     {
-      name: '@3',
+      name: '@2',
       brief: '',
-    ref: 'struct_meta___surface_shader_definition.html#1a133f45e29e13a3ab1d1bc62cd39ac9c6'
+    ref: 'struct_meta___surface_shader_definition.html#1a33d05ce223da2c531ea563a9ca0df301'
     },
     {
       name: 'IDX',
@@ -7270,24 +7275,19 @@ $(document).ready(function() {
     ref: 'struct_meta___surface_shader_instance.html#1a2a88758a8b7045bacff38fa39cdd0359'
     },
     {
-      name: '@4',
-      brief: '',
-    ref: 'struct_meta___surface_shader_instance.html#1a8eb6f1784cf5ab44d2cb9169936cd343'
-    },
-    {
       name: 'IDX',
       brief: '',
     ref: 'struct_meta___surface_shader_instance.html#1abc1b604b0d3509db704894bdc16daf56'
     },
     {
+      name: '@3',
+      brief: '',
+    ref: 'struct_meta___surface_shader_instance.html#1aeef90b76aaefadcf3b55544869662861'
+    },
+    {
       name: 'IDX',
       brief: 'Property index',
     ref: 'struct_meta___system_collision.html#1a751e0798eb5296467dbc6c1edc752ec6'
-    },
-    {
-      name: 'Meta_SystemCollision',
-      brief: '',
-    ref: 'struct_meta___system_collision.html#1ab19008ddad71ca334c50892fc5661ec9'
     },
     {
       name: 'IDX',
@@ -7420,14 +7420,14 @@ $(document).ready(function() {
     ref: 'struct_meta___user.html#1af19c8bf9445cce160bbe7ce5c54dd80e'
     },
     {
-      name: '@2',
-      brief: '',
-    ref: 'struct_meta___user_link.html#1aa54668c5ed7634effa52682f34e0caa1'
-    },
-    {
       name: 'Meta_UserLink',
       brief: '',
     ref: 'struct_meta___user_link.html#1ae26d35a5418fb86e0b44234cb758a1a0'
+    },
+    {
+      name: '@1',
+      brief: '',
+    ref: 'struct_meta___user_link.html#1af0d21405ffc5ee062175c5d5a6ed4d56'
     },
     {
       name: 'IDX',
@@ -8126,7 +8126,7 @@ $(document).ready(function() {
     },
     {
       name: 'childbyindex',
-      brief: 'vrNodeGetChildByIndex) Gets a nodes child by its zero-based index',
+      brief: 'vrNodeGetChildByIndex) Gets a nodes child by its zero-based indexvrNodeGetChild and vrNodeGetSibling instead ',
     ref: 'structvrnode.html#1aceabcfd9d76c95f67da5ba3560c47a4c'
     },
     {
@@ -8136,7 +8136,7 @@ $(document).ready(function() {
     },
     {
       name: 'count',
-      brief: 'vrNodeGetChildCount) Counts the children of a node',
+      brief: 'vrNodeGetChildCount) Counts the children of a nodevrNodeGetChild and vrNodeGetSibling instead ',
     ref: 'structvrnode.html#1ae14a5df57c6c552d7b3d0f5d674838f1'
     },
     {
@@ -8328,6 +8328,26 @@ $(document).ready(function() {
       name: 'copy',
       brief: 'vrCopy) Returns a copy of a Vector, Matrix, Ray, Sphere, AABBox, Quaternion or Plane ',
     ref: 'structvrsphere.html#1ac1308307320084b1f219cb7ec898d221'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___manikin.html#1aa688c2616731b77d62a584c4214007db'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___manikin_bone.html#1a0cf42ee751a888e621eed5e36c62eb49'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___manikin_root_bone.html#1a0ab3d4b85b811d37b98de2c7dc55e621'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___manikin_target.html#1ae2c0a5a0bb1c00a6c032157507e26c46'
     },
     {
       name: 'rc',
