@@ -2050,6 +2050,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1ga80cf680c1d95df9f2278813091c5cbc6'
     },
     {
+      name: 'vrGenerateQRCodeFile',
+      brief: 'Generates a QR code and saves it to a file',
+    ref: 'group__api__lua.html#1ga8103cb25772438171f15b8f3ba4601c8'
+    },
+    {
       name: 'vrNodeGetWorldTransform',
       brief: 'DEPRECATED',
     ref: 'group__api__lua.html#1ga81629a86625cb5d3343c9db9bb92e552'
@@ -5835,6 +5840,21 @@ $(document).ready(function() {
     ref: 'struct___texture_info.html#1af097b9b94eb3343700cdccefff42f7f5'
     },
     {
+      name: 'IDX',
+      brief: 'Property index',
+    ref: 'struct_meta___a_r_marker.html#1a3aed844264fa40de49c71a9643f9e991'
+    },
+    {
+      name: 'Mode',
+      brief: '',
+    ref: 'struct_meta___a_r_marker.html#1a7d4213ae93d9d8c69dd79b647b780488'
+    },
+    {
+      name: 'HelperType',
+      brief: '',
+    ref: 'struct_meta___a_r_marker.html#1aac73ab5aa68d8a1d938b486fd2967811'
+    },
+    {
       name: 'Axis',
       brief: 'Values for Idx_Axis',
     ref: 'struct_meta___animation.html#1a01bd8a35206d76ced2a2e837aafe5746'
@@ -7353,6 +7373,16 @@ $(document).ready(function() {
       name: 'IDX',
       brief: 'Property index',
     ref: 'struct_meta___time_interval_guard.html#1a56b633dfe44124427408154735b5da74'
+    },
+    {
+      name: 'IDX',
+      brief: 'Property index',
+    ref: 'struct_meta___tracked_a_r_marker.html#1a2eb414f1d89993fb39cbdbe115776eff'
+    },
+    {
+      name: 'Type',
+      brief: '',
+    ref: 'struct_meta___tracked_a_r_marker.html#1aadf6d01ba0c28a2cb5ed7837d3209c5c'
     },
     {
       name: 'IDX',
@@ -9423,6 +9453,11 @@ $(document).ready(function() {
       name: 'New in 2021.3',
       brief: 'This page lists changes in version 2021',
       ref: 'v2021_2_to_v2021_3.html'
+    },
+    {
+      name: 'New in 2023.2',
+      brief: 'This page lists changes in version 2023',
+      ref: 'v2023_1_to_v2023_2.html'
     },
     {
       name: 'New in 2.1.0',
