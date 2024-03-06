@@ -3585,6 +3585,11 @@ $(document).ready(function() {
     ref: 'group__api__lua.html#1gafb56bbfefea11d7eae0a1b463d209dfe'
     },
     {
+      name: 'vrSplitVirtalisHubURL',
+      brief: 'Identifies a Virtalis Hub URL and splits out the server name, artifact ID and artifact name',
+    ref: 'group__api__lua.html#1gafbd9e2325504cd5ab5ad1de097d81f51'
+    },
+    {
       name: 'vrUsersNode',
       brief: 'Returns the \'Users\' node from the tree',
     ref: 'group__api__lua.html#1gafbfe3e82d9dd9936e0bd86cc05de7374'
@@ -4525,104 +4530,94 @@ $(document).ready(function() {
     ref: 'group__api__observer.html#1gafbba66995a95226599f720434b3fcca7'
     },
     {
+      name: 'VRPRegisterUserQuestionCallbackProc',
+      brief: 'Function prototype for registering a question callback function',
+    ref: 'group__api__plugin__interface.html#1ga01d90b05a99e133891a227eebf00f950'
+    },
+    {
       name: 'VRPUserMessageProc',
       brief: 'Function prototype for triggering an application dialog containing a message to present directly to the user',
-    ref: 'group__api__plugin__interface.html#1ga035b0e9cd3d363f0666cf32eb59e4e29'
+    ref: 'group__api__plugin__interface.html#1ga03f089289831aa2665fbbf23401d4c48'
     },
     {
-      name: 'VRPVersionProc',
-      brief: 'Function prototype for getting the plugin version ',
-    ref: 'group__api__plugin__interface.html#1ga0414dfa3874bdd3cf0c1fb9bbbe8151e'
+      name: 'VRPImportProc',
+      brief: 'Function prototype for an import function',
+    ref: 'group__api__plugin__interface.html#1ga0633697120c8b253884273b95692416d'
     },
     {
-      name: 'VRPUserQuestionCallbackProc',
-      brief: 'Function prototype for a callback to call when a user chooses an option presented by a UserQuestion',
-    ref: 'group__api__plugin__interface.html#1ga09b158c475aee712e3b8540b0be7a614'
+      name: 'VRPRegisterUserQuestionProc',
+      brief: 'Function prototype for registering a question function',
+    ref: 'group__api__plugin__interface.html#1ga16e247630893e4d7417386fdf70fef3f'
     },
     {
-      name: 'VRPUserQuestionProc',
-      brief: 'Function prototype for triggering an application dialog containing a question to ask to the userVRPUserQuestionCallbackProc',
-    ref: 'group__api__plugin__interface.html#1ga18e5e461a803698c724aa5a9bc7a6b1b'
-    },
-    {
-      name: 'VRPSignatureProc',
-      brief: 'Function prototype for getting the plugin signature ',
-    ref: 'group__api__plugin__interface.html#1ga2b98b56baa046ff4ec8c7e8d3c062186'
+      name: 'VRPRequestPermissionProc',
+      brief: 'Function prototype for requesting permission to do something',
+    ref: 'group__api__plugin__interface.html#1ga18d5cbd48e313c1e628613404677daf2'
     },
     {
       name: 'VRPRegisterUserMessageProc',
       brief: 'Function prototype for registering a message function',
-    ref: 'group__api__plugin__interface.html#1ga2fca30ab5cde0a2b0afa784268124c4c'
+    ref: 'group__api__plugin__interface.html#1ga2778a31af7f6faa6ca5ac411726549e4'
     },
     {
-      name: 'VRPRegisterHasPermissionProc',
-      brief: 'Function prototype for registering a permission check function',
-    ref: 'group__api__plugin__interface.html#1ga302e36cb76fe8073497a53f89653ae6a'
-    },
-    {
-      name: 'VRPDependsProc',
-      brief: 'Function prototype for getting the plugin dependencies',
-    ref: 'group__api__plugin__interface.html#1ga31bcab181fdb68815e7f474d3ce44df8'
-    },
-    {
-      name: 'VRPProgressYieldProc',
-      brief: 'Function prototypes for a progress yield function',
-    ref: 'group__api__plugin__interface.html#1ga3d31a990f499f30887263bf3ec381d81'
-    },
-    {
-      name: 'VRPRegisterLogProc',
-      brief: 'Function prototype for being given a log function',
-    ref: 'group__api__plugin__interface.html#1ga4629e98ea24790594e75f6e2579a0117'
-    },
-    {
-      name: 'VRPHasPermissionProc',
-      brief: 'Function prototype for checking permission to do somethingVRPRegisterHasPermissionProc',
-    ref: 'group__api__plugin__interface.html#1ga489a3f2b2903d3e337bf0b773bfb1c2b'
-    },
-    {
-      name: 'VRPRegisterRequestPermissionProc',
-      brief: 'Function prototype for registering a permission request function',
-    ref: 'group__api__plugin__interface.html#1ga6e73810b7cf0bf31ecc490a1cbe618a4'
-    },
-    {
-      name: 'VRPRegisterUserQuestionCallbackProc',
-      brief: 'Function prototype for registering a question callback function',
-    ref: 'group__api__plugin__interface.html#1ga7dc2bc81283d3b296b86034f11fd2b9d'
+      name: 'VRPUserQuestionProc',
+      brief: 'Function prototype for triggering an application dialog containing a question to ask to the userVRPUserQuestionCallbackProc',
+    ref: 'group__api__plugin__interface.html#1ga2bee393f89509b822d968a9ea8165447'
     },
     {
       name: 'VRPDefaultRecipeProc',
       brief: 'Function prototype for getting the name of the default recipe file used by the importer',
-    ref: 'group__api__plugin__interface.html#1ga822af0931393af9f904e6a632c0a9d19'
+    ref: 'group__api__plugin__interface.html#1ga3f7e4a1c107f23186e0c84d75c4105c6'
     },
     {
-      name: 'VRPUserQuestionCallbackRegisterProc',
-      brief: 'Function prototype for registering a VRPUserQuestionCallbackProc as the callback for UserQuestion dialogs',
-    ref: 'group__api__plugin__interface.html#1ga90da9fe7c1cb05ceac0086d90e619957'
+      name: 'VRPNameProc',
+      brief: 'Function prototype for getting the plugin full name',
+    ref: 'group__api__plugin__interface.html#1ga637d2733eb3fcaa29e17a593e25bc557'
+    },
+    {
+      name: 'VRPGetAPIVersionProc',
+      brief: 'Function prototype for the API version functions',
+    ref: 'group__api__plugin__interface.html#1ga66ca5b4817847629baa06784cf903270'
+    },
+    {
+      name: 'VRPSettingsInterfaceProc',
+      brief: 'Function prototype for getting the XML description of the settings that should be presented in a user interface',
+    ref: 'group__api__plugin__interface.html#1ga772621984246c3212d47df42a4879969'
+    },
+    {
+      name: 'VRPProgressYieldProc',
+      brief: 'Function prototypes for a progress yield function',
+    ref: 'group__api__plugin__interface.html#1ga7d00de087c4fd4f9afa62cad18d48ab6'
     },
     {
       name: 'VRPLockedProc',
       brief: 'Function prototype for getting the plugin lock condition',
-    ref: 'group__api__plugin__interface.html#1ga91848cc4669a63c729c011f188b832e0'
+    ref: 'group__api__plugin__interface.html#1ga7d295403c3e665c1ceb289dc70e4b9a8'
     },
     {
-      name: 'VRPExportProc',
-      brief: 'Function prototype for an export function',
-    ref: 'group__api__plugin__interface.html#1ga923c420f95e42d53541c87d431f31194'
+      name: 'VRPRegisterProgressYieldProc',
+      brief: 'Function prototype for registering a progress yield function',
+    ref: 'group__api__plugin__interface.html#1ga81c34b145cfabaca61a28a377b659f37'
     },
     {
       name: 'VRPFormatsProc',
       brief: 'Function prototype for getting the XML description of formats accepted by VRPImportProc',
-    ref: 'group__api__plugin__interface.html#1ga9b61a172c626b982edf0b3f0300d67e3'
+    ref: 'group__api__plugin__interface.html#1ga8712fbfd7df5313ab5161528aff99745'
     },
     {
-      name: 'VRPInitProc',
-      brief: 'Function prototype for the plugin init function',
-    ref: 'group__api__plugin__interface.html#1ga9ba2b5903568f79f559ec0e8f6eb97e9'
+      name: 'VRPHasPermissionProc',
+      brief: 'Function prototype for checking permission to do somethingVRPRegisterHasPermissionProc',
+    ref: 'group__api__plugin__interface.html#1ga8ee2dee5576889ed5c9353182742d9bc'
     },
     {
-      name: 'VRPShortNameProc',
-      brief: 'Function prototype for getting the plugin short name ',
-    ref: 'group__api__plugin__interface.html#1gaa14b9e5691554cd71a9bbbe0a3cc087a'
+      name: 'VRPDependsProc',
+      brief: 'Function prototype for getting the plugin dependencies',
+    ref: 'group__api__plugin__interface.html#1ga917d56672c8cd6a94d25b8491ddac0dd'
+    },
+    {
+      name: 'VRPRegisterLogIndentProc',
+      brief: 'Function prototype for being given a log indent function',
+    ref: 'group__api__plugin__interface.html#1ga920e99885cfae7a89872882dcf578e9c'
     },
     {
       name: 'PLUGIN_API_VERSION_MINOR',
@@ -4630,54 +4625,59 @@ $(document).ready(function() {
     ref: 'group__api__plugin__interface.html#1gaa28b16b3503c3c381d68ea6025c74894'
     },
     {
-      name: 'VRPRequestPermissionProc',
-      brief: 'Function prototype for requesting permission to do something',
-    ref: 'group__api__plugin__interface.html#1gaaf53ebb0a7d656c0c582a163c5d0a949'
+      name: 'VRPRegisterLogProc',
+      brief: 'Function prototype for being given a log function',
+    ref: 'group__api__plugin__interface.html#1gaa9937631c0a07704224d68a4a8c849ba'
     },
     {
-      name: 'VRPRegisterUserQuestionProc',
-      brief: 'Function prototype for registering a question function',
-    ref: 'group__api__plugin__interface.html#1gab0a818a2593b9a708802558bf347a54b'
+      name: 'VRPSignatureProc',
+      brief: 'Function prototype for getting the plugin signature ',
+    ref: 'group__api__plugin__interface.html#1gab78dd288a0570443ec663a1bdd5e480c'
     },
     {
       name: 'VRPLogIndentProc',
       brief: 'Function prototype for the log indent function',
-    ref: 'group__api__plugin__interface.html#1gab0d2e854a0bf757a20ef3621ea211872'
+    ref: 'group__api__plugin__interface.html#1gacb87d6e24bfbfb81851227de0cc3b873'
     },
     {
-      name: 'VRPNameProc',
-      brief: 'Function prototype for getting the plugin full name',
-    ref: 'group__api__plugin__interface.html#1gac01ff2266fbc5f91ce81631262930ea2'
+      name: 'VRPLogProc',
+      brief: 'Function prototype for the log function',
+    ref: 'group__api__plugin__interface.html#1gacba7c4a5cd64391237bbc5ca5f2246e9'
     },
     {
-      name: 'VRPFFINamespaceProc',
-      brief: 'Function prototype for getting the FFI namespace/module name to use for this plugin',
-    ref: 'group__api__plugin__interface.html#1gac1755937f20ad3a1c6232a6a6e1622a6'
+      name: 'VRPVersionProc',
+      brief: 'Function prototype for getting the plugin version ',
+    ref: 'group__api__plugin__interface.html#1gad03b4a20a3896537e9ecf61634913c57'
     },
     {
-      name: 'VRPGetAPIVersionProc',
-      brief: 'Function prototype for the API version functions',
-    ref: 'group__api__plugin__interface.html#1gace24c452d3b9bca65d80a94b6484a7da'
+      name: 'VRPRegisterRequestPermissionProc',
+      brief: 'Function prototype for registering a permission request function',
+    ref: 'group__api__plugin__interface.html#1gad07a217d26587459283de45565ade4a4'
     },
     {
-      name: 'VRPImportProc',
-      brief: 'Function prototype for an import function',
-    ref: 'group__api__plugin__interface.html#1gad0918c9ebe489f126a36446283a42681'
+      name: 'VRPInitProc',
+      brief: 'Function prototype for the plugin init function',
+    ref: 'group__api__plugin__interface.html#1gad3f1d9dd41266bbea5148a6c08544ba5'
     },
     {
-      name: 'VRPCleanupProc',
-      brief: 'Function prototype for the plugin cleanup function',
-    ref: 'group__api__plugin__interface.html#1gad0efd6846727cfb2f954657a42474d07'
+      name: 'VRPShortNameProc',
+      brief: 'Function prototype for getting the plugin short name ',
+    ref: 'group__api__plugin__interface.html#1gad6eec3dbb3eb83f8caffbe8fd53c076b'
     },
     {
-      name: 'VRPRegisterLogIndentProc',
-      brief: 'Function prototype for being given a log indent function',
-    ref: 'group__api__plugin__interface.html#1gad5f3b8f368d5d85b304c1bf98b91364b'
+      name: 'VRPRegisterHasPermissionProc',
+      brief: 'Function prototype for registering a permission check function',
+    ref: 'group__api__plugin__interface.html#1gad85c70c03e124e36c0192dc3642be570'
     },
     {
-      name: 'VRPRegisterProgressYieldProc',
-      brief: 'Function prototype for registering a progress yield function',
-    ref: 'group__api__plugin__interface.html#1gad6e988c43b123a1c6881e8a218bf929a'
+      name: 'VRPUserQuestionCallbackRegisterProc',
+      brief: 'Function prototype for registering a VRPUserQuestionCallbackProc as the callback for UserQuestion dialogs',
+    ref: 'group__api__plugin__interface.html#1gad9d7bb363608f66d0ed9d12224985e91'
+    },
+    {
+      name: 'VRPExportProc',
+      brief: 'Function prototype for an export function',
+    ref: 'group__api__plugin__interface.html#1gae16512f0c6d7415ced4b2331cf30cd22'
     },
     {
       name: 'PLUGIN_API_VERSION_MAJOR',
@@ -4685,14 +4685,19 @@ $(document).ready(function() {
     ref: 'group__api__plugin__interface.html#1gae557bf6eeda89ccf2c3cea5d21a7741f'
     },
     {
-      name: 'VRPSettingsInterfaceProc',
-      brief: 'Function prototype for getting the XML description of the settings that should be presented in a user interface',
-    ref: 'group__api__plugin__interface.html#1gae9c68739164273235e05dfda2530df14'
+      name: 'VRPCleanupProc',
+      brief: 'Function prototype for the plugin cleanup function',
+    ref: 'group__api__plugin__interface.html#1gaee8c95007af0a77fd072f625622c3e1e'
     },
     {
-      name: 'VRPLogProc',
-      brief: 'Function prototype for the log function',
-    ref: 'group__api__plugin__interface.html#1gaf7156984c3119cb7e445e125ae9a482c'
+      name: 'VRPUserQuestionCallbackProc',
+      brief: 'Function prototype for a callback to call when a user chooses an option presented by a UserQuestion',
+    ref: 'group__api__plugin__interface.html#1gaf3de1ce377c503a6a110ddc9a362a089'
+    },
+    {
+      name: 'VRPFFINamespaceProc',
+      brief: 'Function prototype for getting the FFI namespace/module name to use for this plugin',
+    ref: 'group__api__plugin__interface.html#1gaf4b1cd5d64aeaab1cb389f120930778f'
     },
     {
       name: 'VRPLUGIN_IMPORT_PERMISSION',
@@ -5758,6 +5763,11 @@ $(document).ready(function() {
       name: 'RegisterManikinMetaNodes',
       brief: '',
     ref: 'meta__manikin_8hpp.html#1a398e2c6687a1c7db1ff552435e5d6ff8'
+    },
+    {
+      name: 'RegisterReachMetaNodes',
+      brief: '',
+    ref: 'meta__remotenodes_8hpp.html#1a6d56d024c20c7dfefce8345e6fef07e5'
     },
     {
       name: 'readStringProp',
@@ -8362,6 +8372,26 @@ $(document).ready(function() {
     {
       name: 'IDX',
       brief: '',
+    ref: 'structvrtree_1_1_meta___collaboration_chat_msg.html#1ae6cbe619999a89a1928960d2219e31a6'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___collaboration_info.html#1a31526d20d9dab41a6f557dce6b886d31'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___collaboration_user_info.html#1a314b1fb6e7902b8573a0cc7267372c9e'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___lua_event.html#1ae0e12a142954430a141e02d9111ac9fe'
+    },
+    {
+      name: 'IDX',
+      brief: '',
     ref: 'structvrtree_1_1_meta___manikin.html#1aa688c2616731b77d62a584c4214007db'
     },
     {
@@ -8378,6 +8408,31 @@ $(document).ready(function() {
       name: 'IDX',
       brief: '',
     ref: 'structvrtree_1_1_meta___manikin_target.html#1ae2c0a5a0bb1c00a6c032157507e26c46'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___platform_l_o_d.html#1a06e8b3a6ebce3b37ad9902f3a77b9290'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___remote_mesh.html#1a412d259e6622c1ea081eb39b23901348'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___remote_texture.html#1a68c1e9fc1cd7b953a4574c6f73063a43'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___tracking_node.html#1ab0e3afac3979a80c4068e4ebe2abfc4b'
+    },
+    {
+      name: 'IDX',
+      brief: '',
+    ref: 'structvrtree_1_1_meta___yeti_g_u_i.html#1a875abc7214623fba8f020ca02c79a39f'
     },
     {
       name: 'rc',
@@ -9458,6 +9513,11 @@ $(document).ready(function() {
       name: 'New in 2023.2',
       brief: 'This page lists changes in version 2023',
       ref: 'v2023_1_to_v2023_2.html'
+    },
+    {
+      name: 'New in 2024.1',
+      brief: 'This page lists changes in version 2024',
+      ref: 'v2023_2_to_v2024_1.html'
     },
     {
       name: 'New in 2.1.0',
